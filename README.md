@@ -53,7 +53,7 @@ patterns.
 ### File format
 
 Files must be stored as ASCII text and must use the UTF-8 character
-encoding.
+encoding without BOM.
 
 Line termination follows the Unix text file convention, thus lines must
 end with a single linefeed (`LF`) character. Line feeds are
