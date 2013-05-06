@@ -610,7 +610,9 @@ errors; and results in useful diffs and blames.
  * Use lowercase names for functions, variables etc.
  * You are not a human code compiler/compressor, so do not try to be
    one: Use thoughtful naming (and a readable structure).
- * Do not use underscores in names.
+ * Do not use underscores in names as a word delimiter. Use leading
+   double underscores for namespaces or leading single underscores for
+   private objects only.
  * Always use single quotes. Never mix quotes.
  * Control structures always have spaces before and after the conditions
    and span multiple lines.
