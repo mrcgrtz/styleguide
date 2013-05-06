@@ -6,11 +6,30 @@ and new ideas are always welcome. Please contribute.
 ## Table of contents
 
  * [General principles](#general-principles)
+    * [Project](#project)
+    * [File format](#file-format)
+    * [Indenting and line length](#indenting-and-line-length)
  * [Third-party projects](#3rdparty)
  * [HTML](#html)
+    * [HTTP content type](#html-content-type)
+    * [Doctype](#doctype)
+    * [Language](#language)
+    * [Encoding](#encoding)
+    * [Elements and Attributes](#elements-and-attributes)
+    * [Indentation](#indentation)
+    * [Layered semantic markup / principles](#semantics)
+    * [Validation](#validation)
+    * [Accessibility](#accessibility)
  * [CSS](#css)
+    * [HTTP content type](#css-content-type)
+    * [Format](#format)
+    * [Declaration order](#declaration-order)
+    * [Comments](#comments)
+    * [Preprocessors](#preprocessors)
  * [JavaScript](#javascript)
  * [PHP](#php)
+ * [License](#license)
+ * [Sources](#sources)
 
 <a name="general-principles"></a>
 ## General principles
@@ -20,6 +39,7 @@ matter how many people contributed. Strictly enforce the agreed-upon
 style. If in doubt when deciding upon a style, use existing, common
 patterns.
 
+<a name="project"></a>
 ### Project
 
  * Your project must have an .editorconfig file in your project’s root
@@ -29,6 +49,7 @@ patterns.
    directory. Stick to the [one](https://github.com/Dreamseer/dotfiles/blob/master/.gitattributes)
    in this dotfiles repository, if possible.
 
+<a name="file-format"></a>
 ### File format
 
 Files must be stored as ASCII text and must use the UTF-8 character
@@ -56,6 +77,7 @@ maintaining existing files. Plenty of whitespace is encouraged. There is
 no need for any developer to purposefully compress HTML or CSS, nor
 obfuscate JavaScript.
 
+<a name="indenting-and-line-length"></a>
 ### Indenting and line length
 
 [Tabs are superior](http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/),
@@ -93,24 +115,28 @@ Some third-party coding style guides:
 <a name="html"></a>
 ## HTML
 
+<a name="html-content-type"></a>
 ### HTTP content type
 
 Always use the `text/html` content type with a UTF-8 encoding:
 
 	Content-Type: text/html; charset=utf-8
 
+<a name="doctype"></a>
 ### Doctype
 
 Always use the minimal, versionless doctype.
 
 	<!DOCTYPE html>
 
+<a name="language"></a>
 ### Language
 
 Always define which language the page is written in.
 
 	<html lang="de">
 
+<a name="encoding"></a>
 ### Encoding
 
 Always define the character encoding using the minimal charset `meta`
@@ -118,6 +144,7 @@ element. The encoding should be defined as early as possible.
 
 	<meta charset="utf-8">
 
+<a name="elements-and-attributes"></a>
 ### Elements and Attributes
 
 All element and attribute names should be lowercase. Attribute values
@@ -135,11 +162,13 @@ Always include `html`, `head` and `body` tags.
 <style></style>
 ```
 
+<a name="indentation"></a>
 ### Indentation
 
 Do not indent inside `html`, `body`, `script`, or `style`. Indent inside
 `head` and all other elements.
 
+<a name="semantics"></a>
 ### Layered semantic markup / principles
 
  * Use semantic class/ID names and appropriate HTML elements for
@@ -149,6 +178,7 @@ Do not indent inside `html`, `body`, `script`, or `style`. Indent inside
  * Use Microformats and Microdata where possible.
  * Use dashes (not underscores) as a word delimiter in class/ID names.
 
+<a name="validation"></a>
 ### Validation
 
 All HTML documents should be verified against the W3C validator to
@@ -157,6 +187,7 @@ directly indicative of good code, but it helps to weed out problems that
 are able to be tested via automation. It is no substitute for manual
 code review.
 
+<a name="accessibility"></a>
 ### Accessibility
 
  * Documents should work without JavaScript enabled.
@@ -171,12 +202,14 @@ code review.
 <a name="css"></a>
 ## CSS
 
+<a name="css-content-type"></a>
 ### HTTP content type
 
 Always use the `text/css` content type with a UTF-8 encoding:
 
 	Content-Type: text/css; charset=utf-8
 
+<a name="format"></a>
 ### Format
 
 The chosen code format must ensure that code is: easy to read; easy to
@@ -222,6 +255,7 @@ errors; and results in useful diffs and blames.
 }
 ```
 
+<a name="declaration-order"></a>
 ### Declaration order
 
 If declarations are to be consistently ordered, it should be in
@@ -445,6 +479,7 @@ ordering as it separates related properties.
 }
 ```
 
+<a name="comments"></a>
 ### Comments
 
 Well commented code is extremely important. Take time to describe
@@ -492,6 +527,7 @@ a.button.star.disabled {
 }
 ```
 
+<a name="preprocessors"></a>
 ### Preprocessors
 
 Different CSS preprocessors have different features, functionality, and
@@ -517,5 +553,29 @@ and [Stylus](http://learnboost.github.io/stylus/).
 <a name="javascript"></a>
 ## JavaScript
 
+tbd.
+
 <a name="php"></a>
 ## PHP
+
+tbd.
+
+<a name="license"></a>
+## License
+
+This Coding Style Guide is licensed under the [Creative Commons
+Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
+This applies to all documents in this repository.
+
+<a name="sources"></a>
+## Sources
+
+ * [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/)
+ * [Fellowship Code Standards](http://developer.fellowshipone.com/patterns/code.php)
+ * [jQuery’s Style Guides](http://contribute.jquery.org/style-guide/)
+ * [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+ * [Idiomatic JS](https://github.com/rwldrn/idiomatic.js/)
+ * [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
+ * [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+ * [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
+ * [PEP 8 — Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
