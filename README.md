@@ -492,18 +492,21 @@ Comment style should be simple and consistent within a single code base.
 * Place comments on a new line above their subject.
 * Make liberal use of comments to break CSS code into discrete sections.
 * Use “sentence case” comments and consistent text indentation.
+* Use Doctype-style [CSSDOC](http://cssdoc.net/) for CSS file headers.
 * Use [KSS](https://github.com/kneath/kss/blob/master/SPEC.md) for
   documenting rulesets. KSS attempts to provide a methodology for
   writing maintainable, documented CSS within a team. Specifically, KSS
   is a documentation specification and styleguide format.
 
 ```css
-/* =====================================================================
-   Section comment block
-   ================================================================== */
-
-/* Sub-section comment block
-   ================================================================== */
+/**
+ * @package    My project
+ * @subpackage Ratings module
+ * @license    MIT License, http://opensource.org/licenses/MIT
+ * @copyright  Copyright (c) 2013, John Doe
+ * @author     John Doe
+ * @media      all
+ */
 
 /*
 A button suitable for giving stars to someone.
