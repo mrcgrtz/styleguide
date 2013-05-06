@@ -24,11 +24,15 @@ style exists, it should be respected.
     * [Accessibility](#accessibility)
  * [CSS](#css)
     * [HTTP content type](#css-content-type)
-    * [Format](#format)
+    * [Format](#css-format)
     * [Declaration order](#declaration-order)
-    * [Comments](#comments)
+    * [Comments](#css-comments)
     * [Preprocessors](#preprocessors)
  * [JavaScript](#javascript)
+    * [HTTP content type](#js-content-type)
+    * [Format](#js-format)
+    * [Comments](#js-comments)
+    * [Modules](#modules)
  * [PHP](#php)
  * [License](#license)
  * [Sources](#sources)
@@ -239,7 +243,7 @@ Always use the `text/css` content type with a UTF-8 encoding:
 
 	Content-Type: text/css; charset=utf-8
 
-<a name="format"></a>
+<a name="css-format"></a>
 ### Format
 
 The chosen code format must ensure that code is: easy to read; easy to
@@ -509,7 +513,7 @@ ordering as it separates related properties.
 }
 ```
 
-<a name="comments"></a>
+<a name="css-comments"></a>
 ### Comments
 
 Well commented code is extremely important. Take time to describe
@@ -586,14 +590,14 @@ and [Stylus](http://learnboost.github.io/stylus/).
 <a name="javascript"></a>
 ## JavaScript
 
-<a name="css-content-type"></a>
+<a name="js-content-type"></a>
 ### HTTP content type
 
 Always use the `text/javascript` content type with a UTF-8 encoding:
 
 	Content-Type: text/javascript; charset=utf-8
 
-<a name="format"></a>
+<a name="js-format"></a>
 ### Format
 
 The chosen code format must ensure that code is: easy to read; easy to
@@ -653,7 +657,7 @@ function foo() {
 }
 ```
 
-<a name="comments"></a>
+<a name="js-comments"></a>
 ### Comments
 
 Well commented code is extremely important. Take time to describe
