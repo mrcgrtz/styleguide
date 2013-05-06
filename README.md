@@ -42,12 +42,40 @@ patterns.
 <a name="project"></a>
 ### Project
 
- * Your project must have an `.editorconfig` file in your project’s root
-   directory. Stick to the [one](https://github.com/Dreamseer/dotfiles/blob/master/.editorconfig)
-   in this dotfiles repository, if possible.
- * Your project must have a `.gitattributes` file in your project’s root
-   directory. Stick to the [one](https://github.com/Dreamseer/dotfiles/blob/master/.gitattributes)
-   in this dotfiles repository, if possible.
+Every project must have an `.editorconfig` file in its root directory.
+
+```ìni
+# This file is for unifying the coding style for different editors
+# and IDEs. EditorConfig is awesome: http://EditorConfig.org
+
+########################################################################
+# Top-most EditorConfig file
+########################################################################
+root = true
+
+########################################################################
+# All files
+########################################################################
+[*]
+	# indent using tabs
+	indent_style = tab
+	indent_size = tab
+	tab_width = 4
+	# Unix-style newlines with a newline ending every file
+	end_of_line = LF
+	insert_final_newline = true
+	# use UTF-8 without BOM
+	charset = utf-8
+	# remove any trailing whitespace
+	trim_trailing_whitespace = true
+```
+
+A project must have a `.gitattributes` file in its root directory, too.
+
+```text
+# Automatically normalize line endings for all text-based files
+* text=auto
+```
 
 <a name="file-format"></a>
 ### File format
