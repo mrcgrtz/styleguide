@@ -42,10 +42,10 @@ patterns.
 <a name="project"></a>
 ### Project
 
- * Your project must have an .editorconfig file in your project’s root
+ * Your project must have an `.editorconfig` file in your project’s root
    directory. Stick to the [one](https://github.com/Dreamseer/dotfiles/blob/master/.editorconfig)
    in this dotfiles repository, if possible.
- * Your project must have a .gitattributes file in your project’s root
+ * Your project must have a `.gitattributes` file in your project’s root
    directory. Stick to the [one](https://github.com/Dreamseer/dotfiles/blob/master/.gitattributes)
    in this dotfiles repository, if possible.
 
@@ -156,9 +156,9 @@ Always include `html`, `head` and `body` tags.
  * No `type` attribute on link or `style` elements.
 
 ```html
-<script src="…"><script>
+<script src="..."><script>
 <script></script>
-<link rel="stylesheet" href="…">
+<link rel="stylesheet" href="...">
 <style></style>
 ```
 
@@ -516,14 +516,14 @@ A button suitable for giving stars to someone.
 Styleguide 2.1.3.
 */
 a.button.star {
-	…
+	...
 }
 a.button.star.stars-given {
 	/* Basic comment */
-	…
+	...
 }
 a.button.star.disabled {
-	…
+	...
 }
 ```
 
