@@ -135,9 +135,9 @@ length to 72 characters is recommended.
 <a name="3rdparty"></a>
 ## Third-party projects
 
-When working on a third-party project, such as a Drupal module or a
-jQuery plugin, always stick to the corresponding coding style guide if
-the project will be published.
+When working on a to-be-published third-party project, such as a Drupal
+module or a jQuery plugin, always stick to the corresponding coding
+style guide.
 
 Some third-party coding style guides:
 
