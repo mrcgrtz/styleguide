@@ -182,9 +182,9 @@ element. The encoding should be defined as early as possible.
 ### Elements and Attributes
 
 All element and attribute names should be lowercase. Attribute values
-should be quoted. Optional closing tags should be included. Self-closing
-elements should not be closed. Optional attributes should be omitted.
-Always include `html`, `head` and `body` tags.
+should be double-quoted. Optional closing tags should be included.
+Self-closing elements should not be closed. Optional attributes should
+be omitted. Always include `html`, `head` and `body` tags.
 
  * No `type` or `language` attributes on `script` elements.
  * No `type` attribute on link or `style` elements.
