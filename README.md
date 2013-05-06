@@ -1,7 +1,9 @@
 # Coding Style Guide
 
 This is my personal frontend coding style guide. It is a living document
-and new ideas are always welcome. Please contribute.
+and new ideas are always welcome. I do not intend to impose my style
+preferences on other people’s code or projects; if an existing common
+style exists, it should be respected.
 
 ## Table of contents
 
@@ -584,7 +586,125 @@ and [Stylus](http://learnboost.github.io/stylus/).
 <a name="javascript"></a>
 ## JavaScript
 
-tbd.
+<a name="css-content-type"></a>
+### HTTP content type
+
+Always use the `text/javascript` content type with a UTF-8 encoding:
+
+	Content-Type: text/javascript; charset=utf-8
+
+<a name="format"></a>
+### Format
+
+The chosen code format must ensure that code is: easy to read; easy to
+clearly comment; minimizes the chance of accidentally introducing
+errors; and results in useful diffs and blames.
+
+ * Use camelcase names for namespaces or module names. Use one global
+   namespace per site (i.e. `__MySite`). Do not pollute the global
+   namespace.
+ * Use lowercase names for functions, variables etc.
+ * You are not a human code compiler/compressor, so do not try to be
+   one: Use thoughtful naming (and a readable structure).
+ * Do not use underscores in names.
+ * Always use single quotes. Never mix quotes.
+ * Control structures always have spaces before and after the conditions
+   and span multiple lines.
+ * Avoid ternary operations.
+ * Use only one `var`/`let`/`const` per scope (function).
+ * `var`/`let`/`const` statements should always be in the beginning of
+   their respective scope (function).
+
+```js
+function foo() {
+
+	// if possible, use Strict Mode
+	'use strict';
+
+	// combined vars first
+	var bar = '',
+		baz = 1;
+
+	// strict checks with === or !==
+	if (baz !== bar) {
+		...
+	}
+
+	// spaces before and after coditions
+	for (var i = 0; i < length; i++) {
+		...
+	}
+
+	// indent object values
+	baz = new Foobar({
+		lorem: 'foobar',
+		ipsum: 3,
+		dolor: '',
+		sit:   2,
+		amet:  9
+	});
+
+	// span multiple lines, avoid ternary operator
+	if (true) {
+		...
+	} else {
+		...
+	}
+}
+```
+
+<a name="comments"></a>
+### Comments
+
+Well commented code is extremely important. Take time to describe
+components, how they work, their limitations, and the way they are
+constructed. Do not leave others in the team guessing as to the purpose
+of uncommon or non-obvious code.
+
+Comment style should be simple and consistent within a single code base.
+
+* Place comments on a new line above their subject.
+* Use “sentence case” comments and consistent text indentation.
+* Use Doctype-style [JSDuck](https://github.com/senchalabs/jsduck/wiki)
+  for functions and properties.
+
+<a name="modules"></a>
+### Modules
+
+If possible, stick to the Asynchronous Module Definition (AMD) API as
+defined [here](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailamd).
+
+For everything else use the Revealing Module Pattern which is defined
+[here](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript):
+
+```js
+window.__MySite = {} || window.__MySite;
+
+window.__MySite.MyModule = (function(window, document, undefined) {
+
+	'use strict';
+
+	var _myMethod;
+
+	/**
+	 * @method _myMethod
+	 * My Method does nothing. Sadface.
+	 * @private
+	 */
+	_myMethod = function() {
+		...
+	};
+
+	return {
+		init: function() {
+			...
+		}
+	};
+
+})(window, document);
+
+window.__MySite.MyModule.init();
+```
 
 <a name="php"></a>
 ## PHP
