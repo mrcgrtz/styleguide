@@ -210,7 +210,7 @@ Do not indent inside `html`, `body`, `script`, or `style`. Indent inside
    [The Elements of HTML](http://developers.whatwg.org/semantics.html#semantics).
  * Do not use inline CSS or inline JavaScript.
  * Use Microformats and Microdata where possible.
- * Use dashes (not underscores) as a word delimiter in class/ID names.
+ * Use dashes (not underscores) as word delimiters in class/ID names.
 
 <a name="validation"></a>
 ### Validation
