@@ -106,7 +106,7 @@ whitespace, and avoid polluting commits.
 
 Files must end with a new line at their end (`EOF`).
 
-We prefer readability over file-size savings when it comes to
+I prefer readability over file-size savings when it comes to
 maintaining existing files. Plenty of whitespace is encouraged. There is
 no need for any developer to purposefully compress HTML or CSS, nor
 obfuscate JavaScript.
