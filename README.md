@@ -154,21 +154,27 @@ Some third-party coding style guides:
 
 Always use the `text/html` content type with a UTF-8 encoding:
 
-	Content-Type: text/html; charset=utf-8
+```http
+Content-Type: text/html; charset=utf-8
+```
 
 <a name="doctype"></a>
 ### Doctype
 
 Always use the minimal, versionless doctype.
 
-	<!DOCTYPE html>
+```html
+<!DOCTYPE html>
+```
 
 <a name="language"></a>
 ### Language
 
 Always define which language the page is written in.
 
-	<html lang="de">
+```html
+<html lang="de">
+```
 
 <a name="encoding"></a>
 ### Encoding
@@ -176,7 +182,9 @@ Always define which language the page is written in.
 Always define the character encoding using the minimal charset `meta`
 element. The encoding should be defined as early as possible.
 
-	<meta charset="utf-8">
+```html
+<meta charset="utf-8">
+```
 
 <a name="elements-and-attributes"></a>
 ### Elements and Attributes
@@ -241,7 +249,9 @@ code review.
 
 Always use the `text/css` content type with a UTF-8 encoding:
 
-	Content-Type: text/css; charset=utf-8
+```http
+Content-Type: text/css; charset=utf-8
+```
 
 <a name="css-format"></a>
 ### Ruleset format
@@ -600,7 +610,9 @@ and [Stylus](http://learnboost.github.io/stylus/).
 
 Always use the `text/javascript` content type with a UTF-8 encoding:
 
-	Content-Type: text/javascript; charset=utf-8
+```http
+Content-Type: text/javascript; charset=utf-8
+```
 
 <a name="js-format"></a>
 ### Format
