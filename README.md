@@ -523,14 +523,15 @@ of uncommon or non-obvious code.
 
 Comment style should be simple and consistent within a single code base.
 
-* Place comments on a new line above their subject.
+* Comments must be placed on a new line above their subject.
 * Make liberal use of comments to break CSS code into discrete sections.
 * Use “sentence case” comments and consistent text indentation.
-* Use Doctype-style [CSSDOC](http://cssdoc.net/) for CSS file headers.
-* Use [KSS](https://github.com/kneath/kss/blob/master/SPEC.md) for
-  documenting rulesets. KSS attempts to provide a methodology for
-  writing maintainable, documented CSS within a team. Specifically, KSS
-  is a documentation specification and styleguide format.
+* CSS file headers must use Doctype-style [CSSDOC](http://cssdoc.net/).
+* Rulesets should be documented using
+  [KSS](https://github.com/kneath/kss/blob/master/SPEC.md). KSS attempts
+  to provide a methodology for writing maintainable, documented CSS
+  within a team. Specifically, KSS is a documentation specification and
+  styleguide format.
 
 ```css
 /**
@@ -555,10 +556,12 @@ Styleguide 2.1.3.
 a.button.star {
 	...
 }
+
 a.button.star.stars-given {
 	/* Basic comment */
 	...
 }
+
 a.button.star.disabled {
 	...
 }
@@ -684,10 +687,14 @@ of uncommon or non-obvious code.
 
 Comment style should be simple and consistent within a single code base.
 
-* Place comments on a new line above their subject.
+* Comments must be placed on a new line above their subject.
 * Use “sentence case” comments and consistent text indentation.
 * Use Doctype-style [JSDuck](https://github.com/senchalabs/jsduck/wiki)
-  for functions and properties.
+  for functions and properties to ease automated API documentation
+  generation.
+* Functions and properties should be documented using
+  [JSDuck](https://github.com/senchalabs/jsduck/wiki) to ease
+  auto-generating API documentations.
 
 <a name="modules"></a>
 ### Modules
