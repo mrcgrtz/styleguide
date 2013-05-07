@@ -198,7 +198,7 @@ be omitted. Always include `html`, `head` and `body` tags.
  * No `type` attribute on link or `style` elements.
 
 ```html
-<script src="..."><script>
+<script src="..."></script>
 <script></script>
 <link rel="stylesheet" href="...">
 <style></style>
