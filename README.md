@@ -1,14 +1,14 @@
 # Coding Style Guide
 
-This is my personal frontend coding style guide. It is a living document
-and new ideas are always welcome. I do not intend to impose my style
-preferences on other people’s code or projects; if an existing common
-style exists, it should be respected.
+**This is my personal frontend coding style guide.** It is a living
+document and new ideas are always welcome. I do not intend to impose my
+style preferences on other people’s code or projects; if an existing
+common style exists, it should be respected.
 
 ## Table of contents
 
  * [General principles](#general-principles)
-    * [Project](#project)
+    * [Project defaults](#project-defaults)
     * [File format](#file-format)
     * [Indenting and line length](#indenting-and-line-length)
  * [Third-party projects](#3rdparty)
@@ -17,14 +17,14 @@ style exists, it should be respected.
     * [Doctype](#doctype)
     * [Language](#language)
     * [Encoding](#encoding)
-    * [Elements and Attributes](#elements-and-attributes)
+    * [Elements and attributes](#elements-and-attributes)
     * [Indentation](#indentation)
     * [Layered semantic markup / principles](#semantics)
     * [Validation](#validation)
     * [Accessibility](#accessibility)
  * [CSS](#css)
     * [HTTP content type](#css-content-type)
-    * [Format](#css-format)
+    * [Ruleset format](#css-format)
     * [Declaration order](#declaration-order)
     * [Comments](#css-comments)
     * [Preprocessors](#preprocessors)
@@ -45,8 +45,8 @@ matter how many people contributed. Strictly enforce the agreed-upon
 style. If in doubt when deciding upon a style, use existing, common
 patterns.
 
-<a name="project"></a>
-### Project
+<a name="project-defaults"></a>
+### Project defaults
 
 Every project must have an `.editorconfig` file in its root directory.
 
@@ -187,7 +187,7 @@ element. The encoding should be defined as early as possible.
 ```
 
 <a name="elements-and-attributes"></a>
-### Elements and Attributes
+### Elements and attributes
 
 All element and attribute names should be lowercase. Attribute values
 should be double-quoted. Optional closing tags should be included.
