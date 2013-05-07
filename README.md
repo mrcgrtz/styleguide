@@ -604,22 +604,37 @@ The chosen code format must ensure that code is: easy to read; easy to
 clearly comment; minimizes the chance of accidentally introducing
 errors; and results in useful diffs and blames.
 
- * Use camelcase names for namespaces or module names. Use one global
-   namespace per site (i.e. `__MySite`). Do not pollute the global
-   namespace.
- * Use lowercase names for functions, variables etc.
+ * Namespaces must be declared in `StudlyCaps` and should start with
+   leading double underscores (i.e. `__MySite`). Use one global
+   namespace per site and do not pollute the global namespace.
+ * AMD module names must be declared in `StudlyCaps`.
+ * Everything else (like method, variable, or constant names names) must
+   be declared in `camelCase`. Private objects should start with a
+   leading single underscore (i.e. `_myPrivateMethod`).
+ * Do not use underscores in names as a word delimiter.
  * You are not a human code compiler/compressor, so do not try to be
    one: Use thoughtful naming (and a readable structure).
- * Do not use underscores in names as a word delimiter. Use leading
-   double underscores for namespaces or leading single underscores for
-   private objects only.
  * Always use single quotes. Never mix quotes.
+ * There must be one blank line after a scope (function), and there
+   must be one blank line after the block of `var`/`let`/`const`
+   statements.
  * Control structures always have spaces before and after the conditions
    and span multiple lines.
+ * Opening braces for methods must go on the same line, and closing
+   braces must go on the next line after the body.
+ * Control structure keywords must have one space after them; method and
+   function calls must not.
+ * Opening braces for control structures must go on the same line, and
+   closing braces must go on the next line after the body.
+ * Opening parentheses for control structures must not have a space
+   after them, and closing parentheses for control structures must not
+   have a space before.
  * Avoid ternary operations.
  * Use only one `var`/`let`/`const` per scope (function).
  * `var`/`let`/`const` statements should always be in the beginning of
    their respective scope (function).
+ * Invoke [Strict Mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+   for methods where possible.
 
 ```js
 function foo() {
