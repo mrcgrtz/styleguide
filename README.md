@@ -244,11 +244,11 @@ indented, too.
 <a name="validation"></a>
 ### Validation
 
-All HTML documents should be verified against the W3C validator to
-ensure that the markup is well formed. This in and of itself is not
-directly indicative of good code, but it helps to weed out problems that
-are able to be tested via automation. It is no substitute for manual
-code review.
+All HTML documents should be verified against the
+[W3C validator](http://validator.w3.org/nu/) to ensure that the markup
+is well formed. This in and of itself is not directly indicative of good
+code, but it helps to weed out problems that are able to be tested via
+automation. It is no substitute for manual code review.
 
 <a name="accessibility"></a>
 ### Accessibility
