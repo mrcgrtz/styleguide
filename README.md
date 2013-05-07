@@ -629,10 +629,11 @@ and [Stylus](http://learnboost.github.io/stylus/).
 <a name="js-content-type"></a>
 ### HTTP content type
 
-Always use the `text/javascript` content type with a UTF-8 encoding:
+Always use the `application/javascript` content type with a UTF-8
+encoding:
 
 ```
-Content-Type: text/javascript; charset=utf-8
+Content-Type: application/javascript; charset=utf-8
 ```
 
 <a name="js-format"></a>
