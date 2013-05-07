@@ -63,17 +63,17 @@ root = true
 # All files
 ########################################################################
 [*]
-	# indent using tabs
-	indent_style = tab
-	indent_size = tab
-	tab_width = 4
-	# Unix-style newlines with a newline ending every file
-	end_of_line = LF
-	insert_final_newline = true
-	# use UTF-8 without BOM
-	charset = utf-8
-	# remove any trailing whitespace
-	trim_trailing_whitespace = true
+# indent using tabs
+indent_style = tab
+indent_size = tab
+tab_width = 4
+# Unix-style newlines with a newline ending every file
+end_of_line = LF
+insert_final_newline = true
+# use UTF-8 without BOM
+charset = utf-8
+# remove any trailing whitespace
+trim_trailing_whitespace = true
 ```
 
 A project must have a `.gitattributes` file in its root directory, too.
