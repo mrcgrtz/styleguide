@@ -192,10 +192,10 @@ element. The encoding should be defined as early as possible.
 All element and attribute names should be lowercase. Attribute values
 should be double-quoted. Optional closing tags should be included.
 Self-closing elements should not be closed. Optional attributes should
-be omitted. Always include `html`, `head` and `body` tags.
+be omitted. Always include `HTML`, `HEAD` and `BODY` tags.
 
- * No `type` or `language` attributes on `script` elements.
- * No `type` attribute on link or `style` elements.
+ * No `type` or `language` attributes on `SCRIPT` elements.
+ * No `type` attribute on `LINK` or `STYLE` elements.
 
 ```html
 <script src="..."></script>
@@ -207,8 +207,12 @@ be omitted. Always include `html`, `head` and `body` tags.
 <a name="indentation"></a>
 ### Indentation
 
-Do not indent inside `html`, `body`, `script`, or `style`. Indent inside
-`head` and all other elements.
+Do not indent inside `HTML`, `BODY`, `SCRIPT`, or `STYLE`. Indent inside
+`HEAD` and all other block elements.
+
+List items and all table elements (like `CAPTION`, `THEAD`, `TFOOT`,
+`TBODY`, `TR`, `TH`, and `TD`) should stay on their own line and be
+indented, too.
 
 <a name="semantics"></a>
 ### Layered semantic markup / principles
@@ -216,9 +220,26 @@ Do not indent inside `html`, `body`, `script`, or `style`. Indent inside
  * Use semantic class/ID names and appropriate HTML elements for
    content as defined in
    [The Elements of HTML](http://developers.whatwg.org/semantics.html#semantics).
+ * Use actual `P` elements for paragraph delimiters as opposed to
+   multiple `BR` elements.
+ * Make use of `DL` (definition lists) and `BLOCKQUOTE`, when
+   appropriate.
+ * Items in list form should always be housed in a `UL`, `OL`, or `DL`,
+   never a set of `DIV` or `P` elements.
  * Do not use inline CSS or inline JavaScript.
- * Use Microformats and Microdata where possible.
  * Use dashes (not underscores) as word delimiters in class/ID names.
+ * Tables shouldn˚t be used for page layout.
+ * Make use of `THEAD`, `TBODY`, and `TH` elements (and `scope`
+   attribute) when appropriate.
+ * Use `LABEL` elements to label each form field, the `for` attribute
+   should associate itself with the form field, so users can click the
+   labels. `cursor: pointer;` on the label is wise, as well.
+ * Use [Microformats](http://microformats.org/) and Microdata where
+   appropriate, specifically [hCard](http://microformats.org/wiki/hcard)
+   and [adr](http://microformats.org/wiki/adr).
+ * Always use the appropriate case for headers and titles. Do not use
+   all caps or all lowercase titles in markup, instead apply the CSS
+   property `text-transform`.
 
 <a name="validation"></a>
 ### Validation
@@ -772,3 +793,4 @@ This applies to all documents in this repository.
  * [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
  * [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
  * [PEP 8 — Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
+ * [Isobar Front-end Code Standards & Best Practices](http://isobar-idev.github.io/code-standards/)
