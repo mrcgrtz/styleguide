@@ -154,7 +154,7 @@ Some third-party coding style guides:
 
 Always use the `text/html` content type with a UTF-8 encoding:
 
-```http
+```
 Content-Type: text/html; charset=utf-8
 ```
 
@@ -249,7 +249,7 @@ code review.
 
 Always use the `text/css` content type with a UTF-8 encoding:
 
-```http
+```
 Content-Type: text/css; charset=utf-8
 ```
 
@@ -610,7 +610,7 @@ and [Stylus](http://learnboost.github.io/stylus/).
 
 Always use the `text/javascript` content type with a UTF-8 encoding:
 
-```http
+```
 Content-Type: text/javascript; charset=utf-8
 ```
 
