@@ -553,16 +553,16 @@ A button suitable for giving stars to someone.
 
 Styleguide 2.1.3.
 */
-a.button.star {
+button.star {
 	...
 }
 
-a.button.star.stars-given {
+button.star.stars-given {
 	/* Basic comment */
 	...
 }
 
-a.button.star.disabled {
+button.star.disabled {
 	...
 }
 ```
