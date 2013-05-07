@@ -228,7 +228,7 @@ indented, too.
    never a set of `DIV` or `P` elements.
  * Do not use inline CSS or inline JavaScript.
  * Use dashes (not underscores) as word delimiters in class/ID names.
- * Tables shouldn˚t be used for page layout.
+ * Tables shouldn’t be used for page layout.
  * Make use of `THEAD`, `TBODY`, and `TH` elements (and `scope`
    attribute) when appropriate.
  * Use `LABEL` elements to label each form field, the `for` attribute
