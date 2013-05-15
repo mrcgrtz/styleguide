@@ -728,9 +728,6 @@ Comment style should be simple and consistent within a single code base.
 * Use Doctype-style [JSDuck](https://github.com/senchalabs/jsduck/wiki)
   for functions and properties to ease automated API documentation
   generation.
-* Functions and properties should be documented using
-  [JSDuck](https://github.com/senchalabs/jsduck/wiki) to ease
-  auto-generating API documentations.
 
 <a name="modules"></a>
 ### Modules
