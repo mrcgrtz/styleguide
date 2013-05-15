@@ -647,9 +647,10 @@ errors; and results in useful diffs and blames.
    leading double underscores (i.e. `__MySite`). Use one global
    namespace per site and do not pollute the global namespace.
  * AMD module names must be declared in `StudlyCaps`.
- * Everything else (like method, variable, or constant names names) must
-   be declared in `camelCase`. Private objects should start with a
-   leading single underscore (i.e. `_myPrivateMethod`).
+ * Constant names must be declared in `UPPERCASE`.
+ * Everything else (like method or variable names) must be declared in
+  `camelCase`. Private methods or variables should start with a leading
+   single underscore (i.e. `_myPrivateMethod`).
  * Do not use underscores in names as a word delimiter.
  * You are not a human code compiler/compressor, so do not try to be
    one: Use thoughtful naming (and a readable structure).
