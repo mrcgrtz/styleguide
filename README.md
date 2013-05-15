@@ -736,7 +736,35 @@ Comment style should be simple and consistent within a single code base.
 ### Modules
 
 If possible, stick to the Asynchronous Module Definition (AMD) API as
-defined [here](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailamd).
+defined [here](https://github.com/amdjs/amdjs-api/wiki).
+
+```js
+define([
+	'MyModules/Requirement1',
+	'MyModules/Requirement2'
+], function(Requirement1, Requirement2) {
+
+	'use strict';
+
+	var _myMethod;
+
+	/**
+	 * @method _myMethod
+	 * My Method does nothing. Sadface.
+	 * @private
+	 */
+	_myMethod = function() {
+		...
+	};
+
+	return {
+		init: function() {
+			...
+		}
+	};
+
+});
+```
 
 For everything else use the Revealing Module Pattern which is defined
 [here](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript):
