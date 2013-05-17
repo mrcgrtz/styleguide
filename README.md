@@ -1,11 +1,11 @@
-# Coding Style Guide
+# Dreamseer’s Indisputable Coding Style
 
 **This is my personal frontend coding style guide.** It is a living
 document and new ideas are always welcome. I do not intend to impose my
 style preferences on other people’s code or projects; if an existing
 common style exists, it should be respected.
 
-The key words “MUST”, MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”,
+The keywords “MUST”, MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”,
 “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this
 document are to be interpreted as described in
 [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
