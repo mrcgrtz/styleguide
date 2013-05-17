@@ -39,6 +39,8 @@ document are to be interpreted as described in
     * [Comments](#js-comments)
     * [Modules](#modules)
  * [PHP](#php)
+    * [PSR-1 and PSR-2](#php-standards)
+    * [Optional exceptions from PSR-1 and PSR-2](#exceptions)
  * [License](#license)
  * [Sources](#sources)
 
@@ -804,7 +806,27 @@ window.__MySite.MyModule.init();
 <a name="php"></a>
 ## PHP
 
-tbd.
+<a name="php-standards"></a>
+### PSR-1 and PSR-2
+
+I highly recommend sticking to these guidelines defined by the PHP
+Framework Interoperability Group:
+
+ * [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
+ * [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+
+<a name="exceptions"></a>
+### Optional exceptions from PSR-1 and PSR-2
+
+To be consistent with code written in [JavaScript](#javascript), these
+bracing exceptions are allowed:
+
+ * Code MUST use tabs for indenting, not 4 spaces.
+ * Opening braces for closure, method and function calls MUST go on the
+   same line, and closing braces MUST go on the next line after the
+   body.
+ * Closure, method and function calls MUST NOT have a space after their
+   keywords.
 
 <a name="license"></a>
 ## License
