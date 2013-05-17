@@ -5,6 +5,11 @@ document and new ideas are always welcome. I do not intend to impose my
 style preferences on other people’s code or projects; if an existing
 common style exists, it should be respected.
 
+The key words “MUST”, MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”,
+“SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this
+document are to be interpreted as described in
+[RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
+
 ## Table of contents
 
  * [General principles](#general-principles)
@@ -40,7 +45,7 @@ common style exists, it should be respected.
 <a name="general-principles"></a>
 ## General principles
 
-All code in any code-base should look like a single person typed it, no
+All code in any code-base SHOULD look like a single person typed it, no
 matter how many people contributed. Strictly enforce the agreed-upon
 style. If in doubt when deciding upon a style, use existing, common
 patterns.
@@ -48,7 +53,7 @@ patterns.
 <a name="project-defaults"></a>
 ### Project defaults
 
-Every project must have an `.editorconfig` file in its root directory.
+Every project MUST have an `.editorconfig` file in its root directory.
 
 ```ìni
 # This file is for unifying the coding style for different editors
@@ -76,7 +81,7 @@ charset = utf-8
 trim_trailing_whitespace = true
 ```
 
-A project must have a `.gitattributes` file in its root directory, too.
+A project MUST have a `.gitattributes` file in its root directory, too.
 
 ```text
 # Automatically normalize line endings for all text-based files
@@ -86,10 +91,10 @@ A project must have a `.gitattributes` file in its root directory, too.
 <a name="file-format"></a>
 ### File format
 
-Files must be stored as ASCII text and must use the UTF-8 character
+Files MUST be stored as ASCII text and MUST use the UTF-8 character
 encoding without BOM.
 
-Line termination follows the Unix text file convention, thus lines must
+Line termination follows the Unix text file convention, thus lines MUST
 end with a single linefeed (`LF`) character. Line feeds are
 represented as ordinal `10`, or hexadecimal `0x0A`. Do not use carriage
 returns (`CR`) like Macintosh computers do (`0x0D`) or the carriage
@@ -104,7 +109,7 @@ Tip: configure your editor to “show invisibles”. This will allow you to
 eliminate end-of-line whitespace, eliminate unintended blank-line
 whitespace, and avoid polluting commits.
 
-Files must end with a new line at their end (`EOF`).
+Files MUST end with a new line at their end (`EOF`).
 
 I prefer readability over file-size savings when it comes to
 maintaining existing files. Plenty of whitespace is encouraged. There is
@@ -115,13 +120,13 @@ obfuscate JavaScript.
 ### Indenting and line length
 
 [Tabs are superior](http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/),
-so use hard tabs to indent, not spaces. Proper nesting shall be
+so use hard tabs to indent, not spaces. Proper nesting SHALL be
 denoted by no more than a single tab for each level of depth.
 
-Tabs in your text editor shall be visually equivalent to four spaces.
+Tabs in your text editor SHOULD be visually equivalent to four spaces.
 
 Never mix tabs and spaces. Code indented with a mixture of tabs and
-spaces should be converted to using tabs exclusively.
+spaces SHOULD be converted to using tabs exclusively.
 
 Limit all lines to a maximum of 79 characters. There are still many
 devices around that are limited to 80 character lines; plus, limiting
@@ -180,7 +185,7 @@ Always define which language the page is written in.
 ### Encoding
 
 Always define the character encoding using the minimal charset `meta`
-element. The encoding should be defined as early as possible.
+element. The encoding SHOULD be defined as early as possible.
 
 ```html
 <meta charset="utf-8">
@@ -189,9 +194,9 @@ element. The encoding should be defined as early as possible.
 <a name="elements-and-attributes"></a>
 ### Elements and attributes
 
-All element and attribute names should be lowercase. Attribute values
-should be double-quoted. Optional closing tags should be included.
-Self-closing elements should not be closed. Optional attributes should
+All element and attribute names SHOULD be lowercase. Attribute values
+SHOULD be double-quoted. Optional closing tags SHOULD be included.
+Self-closing elements SHOULD NOT be closed. Optional attributes SHOULD
 be omitted. Always include `HTML`, `HEAD` and `BODY` tags.
 
  * No `type` or `language` attributes on `SCRIPT` elements.
@@ -207,11 +212,11 @@ be omitted. Always include `HTML`, `HEAD` and `BODY` tags.
 <a name="indentation"></a>
 ### Indentation
 
-Do not indent inside `HTML`, `BODY`, `SCRIPT`, or `STYLE`. Indent inside
-`HEAD` and all other block elements.
+You MUST NOT indent inside `HTML`, `BODY`, `SCRIPT`, or `STYLE`. Indent
+inside `HEAD` and all other block elements.
 
 List items and all table elements (like `CAPTION`, `THEAD`, `TFOOT`,
-`TBODY`, `TR`, `TH`, and `TD`) should stay on their own line and be
+`TBODY`, `TR`, `TH`, and `TD`) SHOULD stay on their own line and be
 indented, too.
 
 <a name="semantics"></a>
@@ -224,15 +229,15 @@ indented, too.
    multiple `BR` elements.
  * Make use of `DL` (definition lists) and `BLOCKQUOTE`, when
    appropriate.
- * Items in list form should always be housed in a `UL`, `OL`, or `DL`,
+ * Items in list form SHOULD always be housed in a `UL`, `OL`, or `DL`,
    never a set of `DIV` or `P` elements.
  * Do not use inline CSS or inline JavaScript.
  * Use dashes (not underscores) as word delimiters in class/ID names.
- * Tables shouldn’t be used for page layout.
+ * Tables SHOULD NOT be used for page layout.
  * Make use of `THEAD`, `TBODY`, and `TH` elements (and `scope`
    attribute) when appropriate.
  * Use `LABEL` elements to label each form field, the `for` attribute
-   should associate itself with the form field, so users can click the
+   SHOULD associate itself with the form field, so users can click the
    labels. `cursor: pointer;` on the label is wise, as well.
  * Use [Microformats](http://microformats.org/) and Microdata where
    appropriate, specifically [hCard](http://microformats.org/wiki/hcard)
@@ -244,7 +249,7 @@ indented, too.
 <a name="validation"></a>
 ### Validation
 
-All HTML documents should be verified against the
+All HTML documents SHOULD be verified against the
 [W3C validator](http://validator.w3.org/nu/) to ensure that the markup
 is well formed. This in and of itself is not directly indicative of good
 code, but it helps to weed out problems that are able to be tested via
@@ -253,8 +258,8 @@ automation. It is no substitute for manual code review.
 <a name="accessibility"></a>
 ### Accessibility
 
- * Documents should work without JavaScript enabled.
- * Documents should be accessible by screenreaders.
+ * Documents SHOULD work without JavaScript enabled.
+ * Documents SHOULD be accessible by screenreaders.
  * Use attributes provided by [WAI-ARIA](http://www.w3.org/TR/wai-aria/)
    to avoid accessibility issues for people using screenreaders or other
    devices.
@@ -325,7 +330,7 @@ errors; and results in useful diffs and blames.
 <a name="declaration-order"></a>
 ### Declaration order
 
-If declarations are to be consistently ordered, it should be in
+If declarations are to be consistently ordered, it SHOULD be in
 accordance with a single, simple principle. My preference is for
 structurally important properties (e.g. display, positioning and box
 behavior) to be declared prior to all others. Avoid alphabetical
@@ -556,11 +561,11 @@ of uncommon or non-obvious code.
 
 Comment style should be simple and consistent within a single code base.
 
-* Comments must be placed on a new line above their subject.
+* Comments MUST be placed on a new line above their subject.
 * Make liberal use of comments to break CSS code into discrete sections.
 * Use “sentence case” comments and consistent text indentation.
-* CSS file headers must use Doctype-style [CSSDOC](http://cssdoc.net/).
-* Rulesets should be documented using
+* CSS file headers MUST use Doctype-style [CSSDOC](http://cssdoc.net/).
+* Rulesets SHOULD be documented using
   [KSS](https://github.com/kneath/kss/blob/master/SPEC.md). KSS attempts
   to provide a methodology for writing maintainable, documented CSS
   within a team. Specifically, KSS is a documentation specification and
@@ -643,35 +648,35 @@ The chosen code format must ensure that code is: easy to read; easy to
 clearly comment; minimizes the chance of accidentally introducing
 errors; and results in useful diffs and blames.
 
- * Namespaces must be declared in `StudlyCaps` and should start with
+ * Namespaces MUST be declared in `StudlyCaps` and SHOULD start with
    leading double underscores (i.e. `__MySite`). Use one global
    namespace per site and do not pollute the global namespace.
- * AMD module names must be declared in `StudlyCaps`.
- * Constant names must be declared in `UPPERCASE`.
- * Everything else (like method or variable names) must be declared in
-  `camelCase`. Private methods or variables should start with a leading
+ * AMD module names MUST be declared in `StudlyCaps`.
+ * Constant names MUST be declared in `UPPERCASE`.
+ * Everything else (like method or variable names) MUST be declared in
+  `camelCase`. Private methods or variables SHOULD start with a leading
    single underscore (i.e. `_myPrivateMethod`).
  * Do not use underscores in names as a word delimiter.
  * You are not a human code compiler/compressor, so do not try to be
    one: Use thoughtful naming (and a readable structure).
  * Always use single quotes. Never mix quotes.
- * There must be one blank line after a scope (function), and there
-   must be one blank line after the block of `var`/`let`/`const`
+ * There MUST be one blank line after a scope (function), and there
+   MUST be one blank line after the block of `var`/`let`/`const`
    statements.
  * Control structures always have spaces before and after the conditions
    and span multiple lines.
- * Opening braces for methods must go on the same line, and closing
-   braces must go on the next line after the body.
- * Control structure keywords must have one space after them; method and
-   function calls must not.
- * Opening braces for control structures must go on the same line, and
-   closing braces must go on the next line after the body.
- * Opening parentheses for control structures must not have a space
-   after them, and closing parentheses for control structures must not
+ * Opening braces for methods MUST go on the same line, and closing
+   braces MUST go on the next line after the body.
+ * Control structure keywords MUST have one space after them; method and
+   function calls MUST NOT.
+ * Opening braces for control structures MUST go on the same line, and
+   closing braces MUST go on the next line after the body.
+ * Opening parentheses for control structures MUST NOT have a space
+   after them, and closing parentheses for control structures MUST NOT
    have a space before.
- * Avoid ternary operations.
+ * Ternary operations SHOULD NOT be used.
  * Use only one `var`/`let`/`const` per scope (function).
- * `var`/`let`/`const` statements should always be in the beginning of
+ * `var`/`let`/`const` statements SHOULD always be in the beginning of
    their respective scope (function).
  * Invoke [Strict Mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
    for methods where possible.
