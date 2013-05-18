@@ -682,8 +682,8 @@ errors; and results in useful diffs and blames.
  * Use only one `var`/`let`/`const` per scope (function).
  * `var`/`let`/`const` statements SHOULD always be in the beginning of
    their respective scope (function).
- * Invoke [Strict Mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
-   for methods where possible.
+ * [Strict Mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+   for methods SHOULD be invoked where possible.
 
 ```js
 function foo() {
