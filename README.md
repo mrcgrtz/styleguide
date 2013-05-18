@@ -84,7 +84,8 @@ charset = utf-8
 trim_trailing_whitespace = true
 ```
 
-A project MUST have a `.gitattributes` file in its root directory, too.
+If Git is used as a VCS, a project MUST have a `.gitattributes` file in
+its root directory, too.
 
 ```text
 # Automatically normalize line endings for all text-based files
