@@ -188,7 +188,7 @@ Always define which language the page is written in.
 <a name="encoding"></a>
 ### Encoding
 
-Always define the character encoding using the minimal charset `meta`
+Always define the character encoding using the minimal charset `META`
 element. The encoding SHOULD be defined as early as possible.
 
 ```html
