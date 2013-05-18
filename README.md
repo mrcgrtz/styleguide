@@ -821,7 +821,7 @@ Framework Interoperability Group:
 ### Optional exceptions from PSR-1 and PSR-2
 
 To be consistent with code written in [JavaScript](#javascript), these
-bracing exceptions are allowed:
+exceptions are allowed:
 
  * Code MUST use tabs for indenting, not 4 spaces.
  * Opening braces for closure, method and function calls MUST go on the
