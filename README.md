@@ -229,23 +229,25 @@ indented, too.
  * Use semantic class/ID names and appropriate HTML elements for
    content as defined in
    [The Elements of HTML](http://developers.whatwg.org/semantics.html#semantics).
- * Use actual `P` elements for paragraph delimiters as opposed to
-   multiple `BR` elements.
- * Make use of `DL` (definition lists) and `BLOCKQUOTE`, when
+ * Actual `P` elements MUST be used for paragraph delimiters as opposed
+   to multiple `BR` elements.
+ * `DL` (definition lists) and `BLOCKQUOTE` SHOULD be used when
    appropriate.
  * Items in list form SHOULD always be housed in a `UL`, `OL`, or `DL`,
    never a set of `DIV` or `P` elements.
- * Do not use inline CSS or inline JavaScript.
- * Use dashes (not underscores) as word delimiters in class/ID names.
+ * Inline CSS or inline JavaScript MUST NOT be used.
+ * Dashes (not underscores) MUST be used as word delimiters in class/ID
+   names.
  * Tables SHOULD NOT be used for page layout.
- * Make use of `THEAD`, `TBODY`, and `TH` elements (and `scope`
-   attribute) when appropriate.
+ * `THEAD`, `TBODY`, and `TH` elements (and `scope` attribute) SHOULD be
+   used when appropriate.
  * Use `LABEL` elements to label each form field, the `for` attribute
    SHOULD associate itself with the form field, so users can click the
    labels. `cursor: pointer;` on the label is wise, as well.
- * Use [Microformats](http://microformats.org/) and Microdata where
-   appropriate, specifically [hCard](http://microformats.org/wiki/hcard)
-   and [adr](http://microformats.org/wiki/adr).
+ * [Microformats](http://microformats.org/) and Microdata SHOULD be used
+   where appropriate, specifically
+   [hCard](http://microformats.org/wiki/hcard) and
+   [adr](http://microformats.org/wiki/adr).
  * Always use the appropriate case for headers and titles. Do not use
    all caps or all lowercase titles in markup, instead apply the CSS
    property `text-transform`.
