@@ -32,8 +32,8 @@ document are to be interpreted as described in
     * [HTTP content type](#css-content-type)
     * [Ruleset format](#css-format)
        * [Link rulesets](#link-rulesets)
-       * [Vendor prefixes](#vendor-prefixes)
     * [Property order](#property-order)
+    * [Properties with vendor prefixes](#vendor-prefixes)
     * [Comments](#css-comments)
     * [Preprocessors](#preprocessors)
  * [JavaScript](#javascript)
@@ -605,9 +605,22 @@ ordering as it separates related properties.
 ```
 
 <a name="vendor-prefixes"></a>
-#### Vendor prefixes
+### Properties with vendor prefixes
 
-TBD.
+When using vendor prefixes, you MUST add the non-prefixed property at
+the end. Thus vendor prefixes should go longest (-webkit-) to shortest
+(unprefixed). Values MAY be right aligned with spaces after the colon
+provided that all the values are the same across all prefixes.
+
+```css
+.selector {
+	-webkit-transition: all 1s ease-out;
+	-moz-transition:    all 1s ease-out;
+	-ms-transition:     all 1s ease-out;
+	-o-transition:      all 1s ease-out;
+	transition:         all 1s ease-out;
+}
+```
 
 <a name="css-comments"></a>
 ### Comments
