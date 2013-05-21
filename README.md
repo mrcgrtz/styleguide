@@ -32,8 +32,8 @@ document are to be interpreted as described in
     * [HTTP content type](#css-content-type)
     * [Ruleset format](#css-format)
        * [Link rulesets](#link-rulesets)
-    * [Declaration order](#declaration-order)
        * [Vendor prefixes](#vendor-prefixes)
+    * [Property order](#property-order)
     * [Comments](#css-comments)
     * [Preprocessors](#preprocessors)
  * [JavaScript](#javascript)
@@ -380,10 +380,10 @@ a:active {
 Tip: Keep *LoVe/HAte* in mind for `:link`, `:visited`,
 `:hover`/`:focus`, and `:active`.
 
-<a name="declaration-order"></a>
-### Declaration order
+<a name="property-order"></a>
+### Property order
 
-If declarations are to be consistently ordered, it SHOULD be in
+If properties are to be consistently ordered, it SHOULD be in
 accordance with a single, simple principle. My preference is for
 structurally important properties (e.g. display, positioning and box
 behavior) to be declared prior to all others. Avoid alphabetical
