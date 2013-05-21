@@ -590,6 +590,11 @@ ordering as it separates related properties.
 }
 ```
 
+<a name="vendor-prefixes"></a>
+#### Vendor prefixes
+
+TBD.
+
 <a name="css-comments"></a>
 ### Comments
 
