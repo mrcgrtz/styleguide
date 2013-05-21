@@ -779,7 +779,7 @@ For everything else use the Revealing Module Pattern which is defined
 [here](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript):
 
 ```js
-window.__MySite = {} || window.__MySite;
+window.__MySite = window.__MySite || {};
 
 window.__MySite.MyModule = (function(window, document, undefined) {
 
