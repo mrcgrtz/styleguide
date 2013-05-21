@@ -717,7 +717,7 @@ errors; and results in useful diffs and blames.
  * Do not use underscores in names as a word delimiter.
  * You are not a human code compiler/compressor, so do not try to be
    one: Use thoughtful naming (and a readable structure).
- * Always use single quotes. Never mix quotes.
+ * Always use single quotes. You MUST NOT mix quotes.
  * There MUST be one blank line after a scope (function), and there
    MUST be one blank line after the block of `var`/`let`/`const`
    statements.
