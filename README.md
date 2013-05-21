@@ -301,14 +301,26 @@ errors; and results in useful diffs and blames.
  * Use one level of indentation for each declaration.
  * Include no space before and a single space after the colon of a
    declaration.
- * Use lowercase and shorthand hex values, e.g., `#aaa`.
- * Use single quotes consistently, e.g., `content: ''`.
- * Single-quote attribute values in selectors, e.g.,
-   `input[type='checkbox']`.
- * Where allowed, avoid specifying units for zero-values, e.g.,
+ * Where allowed, you MUST avoid specifying units for zero-values, e.g.,
    `margin: 0`.
+ * Line heights SHOULD also be unit-less, unless necessary to be defined
+   as a specific pixel value. This is
+   [more](http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/)
+   than just a style convention, but is worth mentioning here.
+ * You MUST NOT use a leading zero for decimal values.
+ * You MUST NOT pad parentheses with spaces.
+ * Multiple comma-separated values for one property SHOULD be separated
+   by either a space or a newline, including within `rgba()`. Newlines
+   SHOULD be used for lengthier multi-part values such as those for
+   shorthand properties like `box-shadow` and `text-shadow`. Each
+   subsequent value after the first should then be on a new line,
+   indented to the same level as the selector and then spaced over to
+   left-align with the previous value.
  * Include no space before and a space after each comma in
    comma-separated property or function values.
+ * Hex values MUST be lowercase and shorthand, e.g., `#aaa`.
+ * Always use single quotes for attribute selectors or values, e.g.,
+   `input[type='checkbox'] { content: ''; }`. You MUST NOT mix quotes.
  * Include a semi-colon at the end of the last declaration in a
    declaration block.
  * Place the closing brace of a ruleset in the same column as the first
