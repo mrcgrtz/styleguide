@@ -333,6 +333,39 @@ errors; and results in useful diffs and blames.
 }
 ```
 
+<a name="link-rulesets"></a>
+#### Link rulesets
+
+For `A` elements, you MUST NOT use the `A` selector alone. Instead use
+these pseudo-classes in
+[this order](http://meyerweb.com/eric/css/link-specificity.html) for
+specifity reasons:
+
+```css
+a:link ,
+a:visited ,
+a:hover ,
+a:focus ,
+a:active {
+	color: #46c;
+	background: #fff;
+}
+
+a:link ,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover ,
+a:focus ,
+a:active {
+	text-decoration: underline;
+}
+```
+
+Tip: Keep *love/HAte* in mind for `:link`, `:visited`, `:hover`,
+`:focus`, and `:active`.
+
 <a name="declaration-order"></a>
 ### Declaration order
 
