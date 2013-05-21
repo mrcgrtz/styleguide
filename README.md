@@ -350,8 +350,8 @@ errors; and results in useful diffs and blames.
 <a name="link-rulesets"></a>
 #### Link rulesets
 
-For `A` elements, you MUST NOT use the `A` selector alone. Instead you
-MUST use these pseudo-classes in
+For any `A` element, you MUST NOT use the `A` selector only. Instead
+you MUST use these pseudo-classes in
 [this order](http://meyerweb.com/eric/css/link-specificity.html) for
 specifity reasons:
 
