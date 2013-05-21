@@ -338,8 +338,8 @@ errors; and results in useful diffs and blames.
 <a name="link-rulesets"></a>
 #### Link rulesets
 
-For `A` elements, you MUST NOT use the `A` selector alone. Instead use
-these pseudo-classes in
+For `A` elements, you MUST NOT use the `A` selector alone. Instead you
+MUST use these pseudo-classes in
 [this order](http://meyerweb.com/eric/css/link-specificity.html) for
 specifity reasons:
 
@@ -365,8 +365,8 @@ a:active {
 }
 ```
 
-Tip: Keep *love/HAte* in mind for `:link`, `:visited`, `:hover`,
-`:focus`, and `:active`.
+Tip: Keep *LoVe/HAte* in mind for `:link`, `:visited`,
+`:hover`/`:focus`, and `:active`.
 
 <a name="declaration-order"></a>
 ### Declaration order
