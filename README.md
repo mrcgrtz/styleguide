@@ -163,7 +163,7 @@ Some third-party coding style guides:
 <a name="html-content-type"></a>
 ### HTTP content type
 
-Always use the `text/html` content type with a UTF-8 encoding:
+You MUST use the `text/html` content type with a UTF-8 encoding:
 
 ```
 Content-Type: text/html; charset=utf-8
@@ -172,7 +172,7 @@ Content-Type: text/html; charset=utf-8
 <a name="doctype"></a>
 ### Doctype
 
-Always use the minimal, versionless doctype.
+You MUST use the minimal, versionless doctype.
 
 ```html
 <!DOCTYPE html>
@@ -181,7 +181,7 @@ Always use the minimal, versionless doctype.
 <a name="language"></a>
 ### Language
 
-Always define which language the page is written in.
+You MUST define which language the page is written in.
 
 ```html
 <html lang="de">
@@ -190,7 +190,7 @@ Always define which language the page is written in.
 <a name="encoding"></a>
 ### Encoding
 
-Always define the character encoding using the minimal charset `META`
+You MUST define the character encoding using the minimal charset `META`
 element. The encoding SHOULD be defined as early as possible.
 
 ```html
@@ -281,7 +281,7 @@ automation. It is no substitute for manual code review.
 <a name="css-content-type"></a>
 ### HTTP content type
 
-Always use the `text/css` content type with a UTF-8 encoding:
+You MUST use the `text/css` content type with a UTF-8 encoding:
 
 ```
 Content-Type: text/css; charset=utf-8
@@ -705,7 +705,7 @@ and [Stylus](http://learnboost.github.io/stylus/).
 <a name="js-content-type"></a>
 ### HTTP content type
 
-Always use the `application/javascript` content type with a UTF-8
+You MUST use the `application/javascript` content type with a UTF-8
 encoding:
 
 ```
@@ -917,3 +917,5 @@ This applies to all documents in this repository.
  * [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
  * [PEP 8 — Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
  * [Isobar Front-end Code Standards & Best Practices](http://isobar-idev.github.io/code-standards/)
+ * [Code Conventions for the Java™ Programming Language](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
+ * [Code Conventions for the JavaServer Pages Technology Version 1.x Language](http://www.oracle.com/technetwork/articles/javase/code-convention-138726.html)
