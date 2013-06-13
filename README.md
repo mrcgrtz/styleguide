@@ -701,7 +701,7 @@ and [Stylus](http://learnboost.github.io/stylus/).
  * All vendor-prefixes MUST use mixins. The only exception MAY be when
    it is super proprietary, unlikely to be standardized as is, and so
    including other vendor prefixes or the non-prefixed version is likely
-   to cause more harm that good (i.i. `-webkit-line-clamp`).
+   to cause more harm that good (i.e. `-webkit-line-clamp`).
  * You MAY prefix custom functions with `x-` or another namespace. This
    helps to avoid any potential to confuse your function with a native
    CSS function, or to clash with functions from libraries.
