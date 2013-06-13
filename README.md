@@ -685,19 +685,31 @@ particularities of any preprocessor in use. The following guidelines are
 in reference to [LESS](http://lesscss.org/), [Sass](http://sass-lang.com/),
 and [Stylus](http://learnboost.github.io/stylus/).
 
- * Use a CSS-like syntax, like SCSS in Sass or the non-omitting syntax
-   in Stylus.
- * Limit nesting to 1 level deep. Reassess any nesting more than 2
+ * You MUST use a CSS-like syntax, like SCSS in Sass or the non-omitting
+   syntax in Stylus.
+ * You MUST place `@extend` statements on the first lines of a
+   declaration block. Knowing right off the bat that an element inherits
+   another whole set of rules from elsewhere is good.
+ * You SHOULD put mixins at the end of a declaration block.
+ * You MUST limit nesting to 3 level deep. Reassess any nesting more than 4
    levels deep. This prevents overly-specific CSS selectors.
- * Avoid large numbers of nested rules. Break them up when readability
-   starts to be affected. Preference to avoid nesting that spreads over
-   more than 20 lines.
- * Always place `@extend` statements on the first lines of a declaration
-   block.
- * Where possible, put mixins at the end of a declaration block.
- * Consider prefixing custom functions with `x-` or another namespace.
-   This helps to avoid any potential to confuse your function with a
-   native CSS function, or to clash with functions from libraries.
+ * You SHOULD avoid large numbers of nested rules. Break them up when
+   readability starts to be affected. Preference to avoid nesting that
+   spreads over more than 20 lines.
+ * Nothing goes after the nested stuff. And the same order as above
+   within the nested selector would apply.
+ * All vendor-prefixes MUST use mixins. The only exception MAY be when
+   it is super proprietary, unlikely to be standardized as is, and so
+   including other vendor prefixes or the non-prefixed version is likely
+   to cause more harm that good (i.i. `-webkit-line-clamp`).
+ * You MAY prefix custom functions with `x-` or another namespace. This
+   helps to avoid any potential to confuse your function with a native
+   CSS function, or to clash with functions from libraries.
+ * Global and section-specific files are just table of contents. In
+   other words, no styles directly in them. Force yourself to keep all
+   styles organized into component parts. List vendor/global
+   dependencies first, then author dependencies, then patterns, then
+   parts.
 
 <a name="javascript"></a>
 ## JavaScript
@@ -917,5 +929,6 @@ This applies to all documents in this repository.
  * [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
  * [PEP 8 — Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
  * [Isobar Front-end Code Standards & Best Practices](http://isobar-idev.github.io/code-standards/)
+ * [Sass Style Guide](http://css-tricks.com/sass-style-guide/)
  * [Code Conventions for the Java™ Programming Language](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
  * [Code Conventions for the JavaServer Pages Technology Version 1.x Language](http://www.oracle.com/technetwork/articles/javase/code-convention-138726.html)
