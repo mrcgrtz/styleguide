@@ -852,6 +852,8 @@ define([
 });
 ```
 
+For jQuery plugins, stick to [this pattern](https://github.com/umdjs/umd/blob/master/jqueryPlugin.js).
+
 For everything else use the Revealing Module Pattern which is defined
 [here](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript):
 
