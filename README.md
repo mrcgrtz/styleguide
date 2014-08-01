@@ -391,6 +391,10 @@ ordering as it separates related properties.
 
 ```css
 .selector {
+	/* generated content */
+	content: value;
+	counter-increment: value;
+	counter-reset: value;
 	/* display and flow */
 	display: value;
 	visibility: value;
@@ -554,6 +558,7 @@ ordering as it separates related properties.
 	hyphens: value;
 	orphans: value;
 	widows: value;
+	quotes: value;
 	/* text direction */
 	direction: value;
 	unicode-bidi: value;
@@ -569,11 +574,6 @@ ordering as it separates related properties.
 	/* images */
 	image-rendering: value;
 	image-region: value;
-	/* generated content */
-	content: value;
-	quotes: value;
-	counter-increment: value;
-	counter-reset: value;
 	/* animation */
 	animation-delay: value;
 	animation-direction: value;
