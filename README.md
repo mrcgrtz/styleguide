@@ -392,215 +392,228 @@ ordering as it separates related properties.
 ```css
 .selector {
 	/* generated content */
-	content: value;
-	counter-increment: value;
-	counter-reset: value;
-	/* display and flow */
-	display: value;
-	visibility: value;
-	float: value;
-	clear: value;
-	/* positioning */
-	position: value;
-	top: value;
-	right: value;
-	bottom: value;
-	left: value;
-	z-index: value;
-	/* box behavior */
-	transform: value;
-	box-shadow: value;
-	box-sizing: value;
-	box-orient: value;
-	box-align: value;
-	box-direction: value;
-	box-pack: value;
-	box-lines: value;
-	box-line-progression: value;
-	box-flex: value;
-	box-ordinal-group: value;
+	content
+	counter-increment
+	counter-reset
+	/* layout */
+	display
+	visibility
+	position
+	top
+	bottom
+	left
+	right
+	z-index
+	float
+	clear
+	flex
+	flex-basis
+	flex-grow
+	flex-shrink
+	flex-direction
+	flex-wrap
+	flex-flow
+	order
+	justify-content
+	align-items
+	align-content
+	align-self
+	grid-columns
+	grid-rows
+	grid-column-align
+	grid-row-align
+	grid-column-span
+	grid-row-span
+	grid-layer
 	/* dimensions */
-	min-width: value;
-	max-width: value;
-	width: value;
-	min-height: value;
-	max-height: value;
-	height: value;
-	clip: value;
-	overflow-x: value;
-	overflow-y: value;
-	overflow: value;
+	box-sizing
+	min-width
+	max-width
+	width
+	min-height
+	max-height
+	height
+	clip
+	overflow
+	overflow-x
+	overflow-y
 	/* margins, padding, borders and outlines */
-	margin-top: value;
-	margin-right: value;
-	margin-bottom: value;
-	margin-left: value;
-	margin: value;
-	padding-top: value;
-	padding-right: value;
-	padding-bottom: value;
-	padding-left: value;
-	padding: value;
-	border-top-width: value;
-	border-top-style: value;
-	border-top-color: value;
-	border-top: value;
-	border-right-width: value;
-	border-right-style: value;
-	border-right-color: value;
-	border-right: value;
-	border-bottom-width: value;
-	border-bottom-style: value;
-	border-bottom-color: value;
-	border-bottom: value;
-	border-left-width: value;
-	border-left-style: value;
-	border-left-color: value;
-	border-left: value;
-	border-width: value;
-	border-style: value;
-	border-color: value;
-	border: value;
-	border-top-left-radius: value;
-	border-top-right-radius: value;
-	border-bottom-right-radius: value;
-	border-bottom-left-radius: value;
-	border-radius: value;
-	border-image-source: value;
-	border-image-slice: value;
-	border-image-width: value;
-	border-image-outset: value;
-	border-image-repeat: value;
-	border-image: value;
-	border-collapse: value;
-	border-spacing: value;
-	outline-top-width: value;
-	outline-top-style: value;
-	outline-top-color: value;
-	outline-top: value;
-	outline-right-width: value;
-	outline-right-style: value;
-	outline-right-color: value;
-	outline-right: value;
-	outline-bottom-width: value;
-	outline-bottom-style: value;
-	outline-bottom-color: value;
-	outline-bottom: value;
-	outline-left-width: value;
-	outline-left-style: value;
-	outline-left-color: value;
-	outline-left: value;
-	outline-width: value;
-	outline-style: value;
-	outline-color: value;
-	outline: value;
-	outline-top-left-radius: value;
-	outline-top-right-radius: value;
-	outline-bottom-right-radius: value;
-	outline-bottom-left-radius: value;
-	outline-radius: value;
-	outline-offset: value;
-	/* grid */
-	grid-columns: value;
-	grid-rows: value;
-	grid-column-align: value;
-	grid-row-align: value;
-	grid-column-span: value;
-	grid-row-span: value;
-	grid-layer: value;
-	/* columns */
-	column-width: value;
-	column-count: value;
-	columns: value;
-	column-rule-width: value;
-	column-rule-style: value;
-	column-rule-color: value;
-	column-rule: value;
-	column-gap: value;
-	column-span: value;
-	column-fill: value;
-	break-before: value;
-	break-after: value;
-	break-inside: value;
-	/* colors and backgrounds */
-	color: value;
-	background-color: value;
-	background-image: value;
-	background-repeat: value;
-	background-attachment: value;
-	background-position: value;
-	background-size: value;
-	background-clip: value;
-	background-origin: value;
-	background: value;
-	opacity: value;
-	/* typography */
-	font-family: value;
-	font-size: value;
-	font-size-adjust: value;
-	font-weight: value;
-	font-style: value;
-	font-variant: value;
-	font-stretch: value;
-	font: value;
-	line-height: value;
-	letter-spacing: value;
-	word-spacing: value;
-	vertical-align: value;
-	text-align: value;
-	text-decoration: value;
-	text-indent: value;
-	text-transform: value;
-	text-shadow: value;
-	text-rendering: value;
-	white-space: value;
-	word-wrap: value;
-	hyphens: value;
-	orphans: value;
-	widows: value;
-	quotes: value;
-	/* text direction */
-	direction: value;
-	unicode-bidi: value;
+	margin
+	margin-top
+	margin-right
+	margin-bottom
+	margin-left
+	padding
+	padding-top
+	padding-right
+	padding-bottom
+	padding-left
+	border
+	border-width
+	border-style
+	border-color
+	border-top
+	border-top-width
+	border-top-style
+	border-top-color
+	border-right
+	border-right-width
+	border-right-style
+	border-right-color
+	border-bottom
+	border-bottom-width
+	border-bottom-style
+	border-bottom-color
+	border-left
+	border-left-width
+	border-left-style
+	border-left-color
+	border-radius
+	border-top-left-radius
+	border-top-right-radius
+	border-bottom-right-radius
+	border-bottom-left-radius
+	border-image
+	border-image-source
+	border-image-slice
+	border-image-width
+	border-image-outset
+	border-image-repeat
+	border-collapse
+	border-spacing
+	outline
+	outline-width
+	outline-style
+	outline-color
+	outline-top
+	outline-top-width
+	outline-top-style
+	outline-top-color
+	outline-right
+	outline-right-width
+	outline-right-style
+	outline-right-color
+	outline-bottom
+	outline-bottom-width
+	outline-bottom-style
+	outline-bottom-color
+	outline-left
+	outline-left-width
+	outline-left-style
+	outline-left-color
+	outline-offset
 	/* lists */
-	list-style-type: value;
-	list-style-position: value;
-	list-style-image: value;
-	list-style: value;
-	/* tables */
-	table-layout: value;
-	caption-side: value;
-	empty-cells: value;
+	list-style
+	list-style-type
+	list-style-position
+	list-style-image
+	table-layout
+	caption-side
+	empty-cells
+	/* typography */
+	font
+	font-family
+	font-size
+	font-size-adjust
+	font-weight
+	font-style
+	font-variant
+	font-stretch
+	font-effect
+	font-emphasize
+	font-emphasize-position
+	font-emphasize-style
+	font-smooth
+	line-height
+	letter-spacing
+	word-spacing
+	vertical-align
+	text-align
+	text-align-last
+	text-decoration
+	text-emphasis
+	text-emphasis-position
+	text-emphasis-style
+	text-emphasis-color
+	text-indent
+	text-justify
+	text-outline
+	text-transform
+	text-wrap
+	text-overflow
+	text-overflow-ellipsis
+	text-overflow-mode
+	text-shadow
+	text-rendering
+	white-space
+	word-wrap
+	word-break
+	tab-size
+	quotes
+	hyphens
+	orphans
+	widows
+	/* columns */
+	columns
+	column-width
+	column-count
+	column-rule-width
+	column-rule-style
+	column-rule-color
+	column-rule
+	column-gap
+	column-span
+	column-fill
+	break-before
+	break-after
+	break-inside
+	/* LTR/RTL direction */
+	direction
+	unicode-bidi
+	/* colors and backgrounds */
+	color
+	background
+	background-color
+	background-image
+	background-repeat
+	background-attachment
+	background-position
+	background-size
+	background-clip
+	background-origin
+	opacity
+	box-shadow
 	/* images */
-	image-rendering: value;
-	image-region: value;
-	/* animation */
-	animation-delay: value;
-	animation-direction: value;
-	animation-duration: value;
-	animation-fill-mode: value;
-	animation-iteration-count: value;
-	animation-name: value;
-	animation-play-state: value;
-	animation-timing-function: value;
-	animation: value;
-	/* general appearance */
-	cursor: value;
-	pointer-events: value;
-	transition-property: value;
-	transition-duration: value;
-	transition-timing-function: value;
-	transition-delay: value;
-	transition: value;
-	appearance: value;
-	resize: value;
-	filter: value;
-	zoom: value;
+	image-rendering
+	image-region
+	/* general appearance and behavior */
+	transform
+	transform-origin
+	transition
+	transition-property
+	transition-duration
+	transition-timing-function
+	transition-delay
+	animation
+	animation-delay
+	animation-direction
+	animation-duration
+	animation-fill-mode
+	animation-iteration-count
+	animation-name
+	animation-play-state
+	animation-timing-function
+	appearance
+	resize
+	cursor
+	pointer-events
+	filter
+	zoom
+	size
 	/* printing appearance */
-	size: value;
-	page-break-before: value;
-	page-break-after: value;
-	page-break-inside: value;
+	page-break-before
+	page-break-after
+	page-break-inside
 }
 ```
 
