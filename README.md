@@ -97,16 +97,19 @@ its root directory, too.
 Projects SHOULD have some files aiding in writing with a consistent
 coding style. Some sample files are listed here:
 
-File                             | Coding Style | Tool                                         | Sublime Text Package
--------------------------------- | ------------ | -------------------------------------------- | -------------------------------------------------------------------------------
-[.editorconfig](.editorconfig)   | General      | Editor                                       | [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)
-[.gitattributes](.gitattributes) | General      | Git                                          |
-[.jshintrc](.jshintrc)           | JavaScript   | [JS Hint](http://www.jshint.com/)            | [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
-[.jscsrc](.jscsrc)               | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) | [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
-[.jsbeautifyrc](.jsbeautifyrc)   | JavaScript   | [JS Beautify](http://jsbeautifier.org/)      | [JsFormat](https://github.com/jdc0589/JsFormat)
-[.csslintrc](.csslintrc)         | CSS          | [CSS Lint](http://csslint.net/)              | [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
-[.csscombrc](.csscombrc)         | CSS          | [CSS Comb](http://csscomb.com/)              | [CSScomb for Sublime Text](https://github.com/csscomb/sublime-csscomb)
-[.htmlhintrc](.htmlhintrc)       | HTML         | [HTML Hint](http://htmlhint.com/)            |
+File                                     | Coding Style | Tool                                         | Sublime Text Package
+---------------------------------------- | ------------ | -------------------------------------------- | -------------------------------------------------------------------------------
+[.editorconfig](helpers/.editorconfig)   | General      | Editor                                       | [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)
+[.gitattributes](helpers/.gitattributes) | General      | [Git](http://git-scm.com/)                   |
+[.jshintrc](helpers/.jshintrc)           | JavaScript   | [JS Hint](http://www.jshint.com/)            | [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
+[.jscsrc](helpers/.jscsrc)               | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) | [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
+[.jsbeautifyrc](helpers/.jsbeautifyrc)   | JavaScript   | [JS Beautify](http://jsbeautifier.org/)      | [JsFormat](https://github.com/jdc0589/JsFormat)
+[.csslintrc](helpers/.csslintrc)         | CSS          | [CSS Lint](http://csslint.net/)              | [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
+[.csscomb.json](helpers/.csscomb.json)   | CSS          | [CSS Comb](http://csscomb.com/)              | [CSScomb for Sublime Text](https://github.com/csscomb/sublime-csscomb)
+[.htmlhintrc](helpers/.htmlhintrc)       | HTML         | [HTML Hint](http://htmlhint.com/)            |
+
+Note: Even more files (e.g. [.jslintrc](http://www.jslint.com/lint.html#options),
+[.eslintrc](http://eslint.org/docs/configuring/)) will be added soon.
 
 <a name="file-format"></a>
 ### File format
