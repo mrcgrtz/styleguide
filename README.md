@@ -101,15 +101,14 @@ File                                     | Coding Style | Tool                  
 ---------------------------------------- | ------------ | -------------------------------------------- | -------------------------------------------------------------------------------
 [.editorconfig](helpers/.editorconfig)   | General      | Editor                                       | [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)
 [.gitattributes](helpers/.gitattributes) | General      | [Git](http://git-scm.com/)                   |
-[.jshintrc](helpers/.jshintrc)           | JavaScript   | [JS Hint](http://www.jshint.com/)            | [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
+[.jshintrc](helpers/.jshintrc)           | JavaScript   | [JSHint](http://www.jshint.com/)             | [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
+[.eslintrc](helpers/.eslintrc)           | JavaScript   | [ESLint](http://eslint.org/)                 | [SublimeLinter-eslint](https://github.com/roadhump/SublimeLinter-eslint)
+[.jslintrc](helpers/.jslintrc)           | JavaScript   | [JSLint](http://www.jslint.com/)             | [SublimeLinter-jslint](https://github.com/devdoc/SublimeLinter-jslint)
 [.jscsrc](helpers/.jscsrc)               | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) | [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
-[.jsbeautifyrc](helpers/.jsbeautifyrc)   | JavaScript   | [JS Beautify](http://jsbeautifier.org/)      | [JsFormat](https://github.com/jdc0589/JsFormat)
+[.jsbeautifyrc](helpers/.jsbeautifyrc)   | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    | [JsFormat](https://github.com/jdc0589/JsFormat)
 [.csslintrc](helpers/.csslintrc)         | CSS          | [CSS Lint](http://csslint.net/)              | [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
-[.csscomb.json](helpers/.csscomb.json)   | CSS          | [CSS Comb](http://csscomb.com/)              | [CSScomb for Sublime Text](https://github.com/csscomb/sublime-csscomb)
-[.htmlhintrc](helpers/.htmlhintrc)       | HTML         | [HTML Hint](http://htmlhint.com/)            |
-
-Note: Even more files (e.g. [.jslintrc](http://www.jslint.com/lint.html#options),
-[.eslintrc](http://eslint.org/docs/configuring/)) will be added soon.
+[.csscomb.json](helpers/.csscomb.json)   | CSS          | [CSScomb](http://csscomb.com/)               | [CSScomb for Sublime Text](https://github.com/csscomb/sublime-csscomb)
+[.htmlhintrc](helpers/.htmlhintrc)       | HTML         | [HTMLHint](http://htmlhint.com/)             |
 
 <a name="file-format"></a>
 ### File format
