@@ -15,6 +15,9 @@ document are to be interpreted as described in
 
  * [General principles](#general-principles)
     * [Project defaults](#project-defaults)
+       * [.editorconfig](#editorconfig)
+       * [.gitattributes](#gitattributes)
+       * [.jshintrc, .csslintrc et al.](#jshintrc-csslintrc-et-al)
     * [File format](#file-format)
     * [Indenting and line length](#indenting-and-line-length)
  * [Third-party projects](#3rdparty)
@@ -118,7 +121,7 @@ text-based files like in this sample file:
 * text=auto
 ```
 
-<a name="helper-files"></a>
+<a name="jshintrc-csslintrc-et-al"></a>
 #### .jshintrc, .csslintrc et al.
 
 Projects SHOULD have some files aiding in writing with a consistent
