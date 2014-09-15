@@ -64,14 +64,14 @@ Every project MUST have an `.editorconfig` file in its root directory.
 # This file is for unifying the coding style for different editors
 # and IDEs. EditorConfig is awesome: http://EditorConfig.org
 
-########################################################################
-# Top-most EditorConfig file
-########################################################################
+# #############################################################################
+# # TOP-MOST .EDITORCONFIG FILE                                               #
+# #############################################################################
 root = true
 
-########################################################################
-# All files
-########################################################################
+# #############################################################################
+# # ALL FILES                                                                 #
+# #############################################################################
 [*]
 # indent using tabs
 indent_style = tab
@@ -84,6 +84,22 @@ insert_final_newline = true
 charset = utf-8
 # remove any trailing whitespace
 trim_trailing_whitespace = true
+
+# #############################################################################
+# # PACKAGE FILES                                                             #
+# #############################################################################
+[{package.json,bower.json}]
+# The indent size used in the `package.json` file cannot be changed, see
+# https://github.com/npm/npm/pull/3180#issuecomment-16336516
+indent_style = space
+indent_size = 2
+
+# #############################################################################
+# # MARKDOWN FILES                                                            #
+# #############################################################################
+[*.md]
+# Do not remove trailing spaces for explicit line-breaks.
+trim_trailing_whitespace = false
 ```
 
 If Git is used as a VCS, a project MUST have a `.gitattributes` file in
