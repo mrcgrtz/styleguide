@@ -58,7 +58,11 @@ patterns.
 <a name="project-defaults"></a>
 ### Project defaults
 
+<a name="editorconfig"></a>
+#### .editorconfig
+
 Every project MUST have an `.editorconfig` file in its root directory.
+Below is a sample:
 
 ```ìni
 # This file is for unifying the coding style for different editors
@@ -102,13 +106,20 @@ indent_size = 2
 trim_trailing_whitespace = false
 ```
 
+<a name="gitattributes"></a>
+#### .gitattributes
+
 If Git is used as a VCS, a project MUST have a `.gitattributes` file in
-its root directory, too.
+its root directory, too. It should normalize line endings for all
+text-based files like in this sample file:
 
 ```text
 # Automatically normalize line endings for all text-based files
 * text=auto
 ```
+
+<a name="helper-files"></a>
+#### .jshintrc, .csslintrc et al.
 
 Projects SHOULD have some files aiding in writing with a consistent
 coding style. Some sample files are listed here:
