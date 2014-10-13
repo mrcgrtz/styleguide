@@ -124,8 +124,8 @@ text-based files like in this sample file:
 <a name="jshintrc-csslintrc-et-al"></a>
 #### .jshintrc, .csslintrc et al.
 
-Projects SHOULD have some files aiding in writing with a consistent
-coding style. Some sample files are listed here:
+Projects SHOULD have files aiding in writing with a consistent coding
+style. Some sample files are listed here:
 
 File                                     | Coding Style | Tool                                         | Sublime Text Package
 ---------------------------------------- | ------------ | -------------------------------------------- | -------------------------------------------------------------------------------
