@@ -43,7 +43,7 @@ document are to be interpreted as described in
     * [HTTP content type](#js-content-type)
     * [Format](#js-format)
     * [Comments](#js-comments)
-    * [Modules](#modules)
+    * [Module patterns](#modules)
  * [PHP](#php)
     * [PSR-1 and PSR-2](#php-standards)
     * [Optional exceptions from PSR-1 and PSR-2](#exceptions)
@@ -876,10 +876,11 @@ Comment style should be simple and consistent within a single code base.
   generation.
 
 <a name="modules"></a>
-### Modules
+### Module patterns
 
-If possible, stick to the Asynchronous Module Definition (AMD) API as
-defined [here](https://github.com/amdjs/amdjs-api/wiki).
+In any non-ES6 context, you SHOULD stick to the
+[Asynchronous Module Definition (AMD) API](https://github.com/amdjs/amdjs-api/wiki)
+and use a module loader like [require.js](http://requirejs.org/).
 
 ```js
 define([
@@ -889,59 +890,42 @@ define([
 
 	'use strict';
 
-	var _myMethod;
-
 	/**
-	 * @method _myMethod
-	 * My Method does nothing. Sadface.
+	 * @method _init
+	 * My initialization does nothing. Sadface.
 	 * @private
 	 */
-	_myMethod = function() {
+	function _init() {
 		...
 	};
 
 	return {
-		init: function() {
-			...
-		}
+		init: _init
 	};
 
 });
 ```
 
-For jQuery plugins, stick to [this pattern](https://github.com/umdjs/umd/blob/master/jqueryPlugin.js).
+The module’s `return` statement SHOULD reference private methods only
+and SHOULD NOT provide any additional logic:
 
-For everything else use the Revealing Module Pattern which is defined
-[here](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript):
-
-```js
-window.__MySite = window.__MySite || {};
-
-window.__MySite.MyModule = (function(window, document, undefined) {
-
-	'use strict';
-
-	var _myMethod;
-
-	/**
-	 * @method _myMethod
-	 * My Method does nothing. Sadface.
-	 * @private
-	 */
-	_myMethod = function() {
-		...
-	};
-
-	return {
-		init: function() {
-			...
-		}
-	};
-
-})(window, document);
-
-window.__MySite.MyModule.init();
 ```
+return {
+	foo: _foo, // right
+	bar: bar, // wrong
+	baz: function() { // wrong
+		...
+	}
+};
+```
+
+Note: Other contexts MAY require different patterns:
+
+ * In ES6 context, you SHOULD stick to the [JavaScript module pattern](http://jsmodules.io/).
+ * For jQuery plugins, you MUST stick to the [UMD pattern](https://github.com/umdjs/umd/blob/master/jqueryPlugin.js).
+ * For everything else you SHOULD use the [Revealing Module Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript).
+
+Important read: [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
 
 <a name="php"></a>
 ## PHP
