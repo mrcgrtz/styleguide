@@ -363,8 +363,8 @@ errors; and results in useful diffs and blames.
 * Include no space before and a space after each comma in
   comma-separated property or function values.
 * Hex values MUST be lowercase and shorthand, e.g., `#aaa`.
-* Always use single quotes for attribute selectors or values, e.g.,
-  `input[type='checkbox'] { content: ''; }`. You MUST NOT mix quotes.
+* Always use doube quotes for attribute selectors or values, e.g.,
+  `input[type="checkbox"] { content: ""; }`. You MUST NOT mix quotes.
 * Include a semicolon at the end of the last declaration in a
   declaration block.
 * Place the closing brace of a ruleset in the same column as the first
@@ -374,7 +374,7 @@ errors; and results in useful diffs and blames.
 ```css
 .selector-1 ,
 .selector-2 ,
-.selector-3[type='text'] {
+.selector-3[type="text"] {
 	display: block;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -801,7 +801,7 @@ errors; and results in useful diffs and blames.
 * Do not use underscores in names as a word delimiter.
 * You are not a human code compiler/compressor, so do not try to be
   one: Use thoughtful naming (and a readable structure).
-* Always use single quotes. You MUST NOT mix quotes.
+* Always use double quotes. You MUST NOT mix quotes.
 * There MUST be one blank line after a scope (function), and there
   MUST be one blank line after the block of `var`/`let`/`const`
   statements.
@@ -827,10 +827,10 @@ errors; and results in useful diffs and blames.
 function foo() {
 
 	// if possible, use Strict Mode
-	'use strict';
+	"use strict";
 
 	// combined vars first
-	var bar = '',
+	var bar = "",
 		baz = 1;
 
 	// strict checks with === or !==
@@ -845,9 +845,9 @@ function foo() {
 
 	// indent object values
 	baz = new Foobar({
-		lorem: 'foobar',
+		lorem: "foobar",
 		ipsum: 3,
-		dolor: '',
+		dolor: "",
 		sit:   2,
 		amet:  9
 	});

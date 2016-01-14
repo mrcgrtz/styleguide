@@ -72,7 +72,7 @@
 	"disallowMultipleLineBreaks": true,
 	"validateLineBreaks": "LF",
 	"validateQuoteMarks": {
-		"mark": "'",
+		"mark": "\"",
 		"escape": true
 	},
 	"validateIndentation": "\t",

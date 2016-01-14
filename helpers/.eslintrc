@@ -109,7 +109,7 @@
 	"no-underscore-dangle"      : true,  // disallow dangling underscores in identifiers
 	"no-wrap-func"              : true,  // disallow wrapping of non-IIFE statements in parens
 	"no-mixed-spaces-and-tabs"  : true,  // disallow mixed spaces and tabs for indentation
-	"quotes"                    : "single", // specify whether double or single quotes should be used
+	"quotes"                    : "double", // specify whether double or single quotes should be used
 	"quote-props"               : false, // require quotes around object literal property names (off by default)
 	"semi"                      : true,  // require or disallow use of semicolons instead of ASI
 	"sort-vars"                 : false, // sort variables within the same declaration block (off by default)
