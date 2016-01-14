@@ -290,10 +290,10 @@ indented, too.
 * Use `LABEL` elements to label each form field, the `for` attribute
   SHOULD associate itself with the form field, so users can click the
   labels. `cursor: pointer;` on the label is wise, as well.
-* [Microformats](http://microformats.org/) and Microdata SHOULD be used
-  where appropriate, specifically
-  [hCard](http://microformats.org/wiki/hcard) and
-  [adr](http://microformats.org/wiki/adr).
+* [Microformats2](http://microformats.org/wiki/microformats-2) and
+  Microdata SHOULD be used where appropriate, specifically
+  [h-card](http://microformats.org/wiki/h-card) and
+  [h-adr](http://microformats.org/wiki/h-adr).
 * Always use the appropriate case for headers and titles. Do not use
   all caps or all lowercase titles in markup, instead apply the CSS
   property `text-transform`.
@@ -365,7 +365,7 @@ errors; and results in useful diffs and blames.
 * Hex values MUST be lowercase and shorthand, e.g., `#aaa`.
 * Always use single quotes for attribute selectors or values, e.g.,
   `input[type='checkbox'] { content: ''; }`. You MUST NOT mix quotes.
-* Include a semi-colon at the end of the last declaration in a
+* Include a semicolon at the end of the last declaration in a
   declaration block.
 * Place the closing brace of a ruleset in the same column as the first
   character of the ruleset.
