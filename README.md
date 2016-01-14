@@ -987,6 +987,7 @@ This applies to all documents in this repository.
  * [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
  * [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
  * [PEP 8 — Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
+ * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
  * [Isobar Front-end Code Standards & Best Practices](http://isobar-idev.github.io/code-standards/)
  * [Sass Style Guide](http://css-tricks.com/sass-style-guide/)
  * [Code Conventions for the Java™ Programming Language](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
