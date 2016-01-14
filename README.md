@@ -13,42 +13,42 @@ document are to be interpreted as described in
 
 ## Table of contents
 
- * [General principles](#general-principles)
-    * [Project defaults](#project-defaults)
-       * [.editorconfig](#editorconfig)
-       * [.gitattributes](#gitattributes)
-       * [.jshintrc, .csslintrc et al.](#jshintrc-csslintrc-et-al)
-    * [File format](#file-format)
-    * [Indenting and line length](#indenting-and-line-length)
- * [Third-party projects](#3rdparty)
- * [HTML](#html)
-    * [HTTP content type](#html-content-type)
-    * [Doctype](#doctype)
-    * [Language](#language)
-    * [Encoding](#encoding)
-    * [Elements and attributes](#elements-and-attributes)
-    * [Indentation](#indentation)
-    * [Layered semantic markup / principles](#semantics)
-    * [Validation](#validation)
-    * [Accessibility](#accessibility)
- * [CSS](#css)
-    * [HTTP content type](#css-content-type)
-    * [Ruleset format](#css-format)
-       * [Link rulesets](#link-rulesets)
-    * [Property order](#property-order)
-    * [Properties with vendor prefixes](#vendor-prefixes)
-    * [Comments](#css-comments)
-    * [Preprocessors](#preprocessors)
- * [JavaScript](#javascript)
-    * [HTTP content type](#js-content-type)
-    * [Format](#js-format)
-    * [Comments](#js-comments)
-    * [Module patterns](#modules)
- * [PHP](#php)
-    * [PSR-1 and PSR-2](#php-standards)
-    * [Optional exceptions from PSR-1 and PSR-2](#exceptions)
- * [License](#license)
- * [Sources](#sources)
+* [General principles](#general-principles)
+  * [Project defaults](#project-defaults)
+    * [.editorconfig](#editorconfig)
+    * [.gitattributes](#gitattributes)
+    * [.jshintrc, .csslintrc et al.](#jshintrc-csslintrc-et-al)
+  * [File format](#file-format)
+  * [Indenting and line length](#indenting-and-line-length)
+* [Third-party projects](#3rdparty)
+* [HTML](#html)
+  * [HTTP content type](#html-content-type)
+  * [Doctype](#doctype)
+  * [Language](#language)
+  * [Encoding](#encoding)
+  * [Elements and attributes](#elements-and-attributes)
+  * [Indentation](#indentation)
+  * [Layered semantic markup / principles](#semantics)
+  * [Validation](#validation)
+  * [Accessibility](#accessibility)
+* [CSS](#css)
+  * [HTTP content type](#css-content-type)
+  * [Ruleset format](#css-format)
+    * [Link rulesets](#link-rulesets)
+  * [Property order](#property-order)
+  * [Properties with vendor prefixes](#vendor-prefixes)
+  * [Comments](#css-comments)
+  * [Preprocessors](#preprocessors)
+* [JavaScript](#javascript)
+  * [HTTP content type](#js-content-type)
+  * [Format](#js-format)
+  * [Comments](#js-comments)
+  * [Module patterns](#modules)
+* [PHP](#php)
+  * [PSR-1 and PSR-2](#php-standards)
+  * [Optional exceptions from PSR-1 and PSR-2](#exceptions)
+* [License](#license)
+* [Sources](#sources)
 
 <a name="general-principles"></a>
 ## General principles
@@ -197,9 +197,9 @@ a jQuery plugin, always stick to the corresponding coding style guide.
 
 Some third-party coding style guides:
 
- * [jQuery’s Style Guides](http://contribute.jquery.org/style-guide/)
- * [Drupal Coding Standards](http://drupal.org/coding-standards)
- * [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/)
+* [jQuery’s Style Guides](http://contribute.jquery.org/style-guide/)
+* [Drupal Coding Standards](http://drupal.org/coding-standards)
+* [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/)
 
 <a name="html"></a>
 ## HTML
@@ -249,8 +249,8 @@ SHOULD be double-quoted. Optional closing tags SHOULD be included.
 Self-closing elements SHOULD NOT be closed. Optional attributes SHOULD
 be omitted. Always include `HTML`, `HEAD` and `BODY` tags.
 
- * No `type` or `language` attributes on `SCRIPT` elements.
- * No `type` attribute on `LINK` or `STYLE` elements.
+* No `type` or `language` attributes on `SCRIPT` elements.
+* No `type` attribute on `LINK` or `STYLE` elements.
 
 ```html
 <script src="..."></script>
@@ -272,31 +272,31 @@ indented, too.
 <a name="semantics"></a>
 ### Layered semantic markup / principles
 
- * Use semantic class/ID names and appropriate HTML elements for
-   content as defined in
-   [The Elements of HTML](http://developers.whatwg.org/semantics.html#semantics).
- * Actual `P` elements MUST be used for paragraph delimiters as opposed
-   to multiple `BR` elements.
- * `DL` (definition lists) and `BLOCKQUOTE` SHOULD be used when
-   appropriate.
- * Items in list form SHOULD always be housed in a `UL`, `OL`, or `DL`,
-   never a set of `DIV` or `P` elements.
- * Inline CSS or inline JavaScript MUST NOT be used.
- * Dashes (not underscores) MUST be used as word delimiters in class/ID
-   names.
- * Tables SHOULD NOT be used for page layout.
- * `THEAD`, `TBODY`, and `TH` elements (and `scope` attribute) SHOULD be
-   used when appropriate.
- * Use `LABEL` elements to label each form field, the `for` attribute
-   SHOULD associate itself with the form field, so users can click the
-   labels. `cursor: pointer;` on the label is wise, as well.
- * [Microformats](http://microformats.org/) and Microdata SHOULD be used
-   where appropriate, specifically
-   [hCard](http://microformats.org/wiki/hcard) and
-   [adr](http://microformats.org/wiki/adr).
- * Always use the appropriate case for headers and titles. Do not use
-   all caps or all lowercase titles in markup, instead apply the CSS
-   property `text-transform`.
+* Use semantic class/ID names and appropriate HTML elements for
+  content as defined in
+  [The Elements of HTML](http://developers.whatwg.org/semantics.html#semantics).
+* Actual `P` elements MUST be used for paragraph delimiters as opposed
+  to multiple `BR` elements.
+* `DL` (definition lists) and `BLOCKQUOTE` SHOULD be used when
+  appropriate.
+* Items in list form SHOULD always be housed in a `UL`, `OL`, or `DL`,
+  never a set of `DIV` or `P` elements.
+* Inline CSS or inline JavaScript MUST NOT be used.
+* Dashes (not underscores) MUST be used as word delimiters in class/ID
+  names.
+* Tables SHOULD NOT be used for page layout.
+* `THEAD`, `TBODY`, and `TH` elements (and `scope` attribute) SHOULD be
+  used when appropriate.
+* Use `LABEL` elements to label each form field, the `for` attribute
+  SHOULD associate itself with the form field, so users can click the
+  labels. `cursor: pointer;` on the label is wise, as well.
+* [Microformats](http://microformats.org/) and Microdata SHOULD be used
+  where appropriate, specifically
+  [hCard](http://microformats.org/wiki/hcard) and
+  [adr](http://microformats.org/wiki/adr).
+* Always use the appropriate case for headers and titles. Do not use
+  all caps or all lowercase titles in markup, instead apply the CSS
+  property `text-transform`.
 
 <a name="validation"></a>
 ### Validation
@@ -310,14 +310,14 @@ automation. It is no substitute for manual code review.
 <a name="accessibility"></a>
 ### Accessibility
 
- * Documents SHOULD work without JavaScript enabled.
- * Documents SHOULD be accessible by screenreaders.
- * Use attributes provided by [WAI-ARIA](http://www.w3.org/TR/wai-aria/)
-   to avoid accessibility issues for people using screenreaders or other
-   devices.
- * Keep keyboard and touch navigation in mind, do not rely on mouse
-   events only.
- * Follow the [WCAG2](http://www.w3.org/TR/WCAG20/#guidelines).
+* Documents SHOULD work without JavaScript enabled.
+* Documents SHOULD be accessible by screenreaders.
+* Use attributes provided by [WAI-ARIA](http://www.w3.org/TR/wai-aria/)
+  to avoid accessibility issues for people using screenreaders or other
+  devices.
+* Keep keyboard and touch navigation in mind, do not rely on mouse
+  events only.
+* Follow the [WCAG2](http://www.w3.org/TR/WCAG20/#guidelines).
 
 <a name="css"></a>
 ## CSS
@@ -338,38 +338,38 @@ The chosen code format must ensure that code is: easy to read; easy to
 clearly comment; minimizes the chance of accidentally introducing
 errors; and results in useful diffs and blames.
 
- * Use one discrete selector per line in multi-selector rulesets.
- * Include a space before each comma in multi-selector rulesets.
- * Include a single space before the opening brace of a ruleset.
- * Include one declaration per line in a declaration block.
- * Use one level of indentation for each declaration.
- * Include no space before and a single space after the colon of a
-   declaration.
- * Where allowed, you MUST avoid specifying units for zero-values, e.g.,
-   `margin: 0`.
- * Line heights SHOULD also be unit-less, unless necessary to be defined
-   as a specific pixel value. This is
-   [more](http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/)
-   than just a style convention, but is worth mentioning here.
- * You MUST NOT use a leading zero for decimal values.
- * You MUST NOT pad parentheses with spaces.
- * Multiple comma-separated values for one property SHOULD be separated
-   by either a space or a newline, including within `rgba()`. Newlines
-   SHOULD be used for lengthier multi-part values such as those for
-   shorthand properties like `box-shadow` and `text-shadow`. Each
-   subsequent value after the first should then be on a new line,
-   indented to the same level as the selector and then spaced over to
-   left-align with the previous value.
- * Include no space before and a space after each comma in
-   comma-separated property or function values.
- * Hex values MUST be lowercase and shorthand, e.g., `#aaa`.
- * Always use single quotes for attribute selectors or values, e.g.,
-   `input[type='checkbox'] { content: ''; }`. You MUST NOT mix quotes.
- * Include a semi-colon at the end of the last declaration in a
-   declaration block.
- * Place the closing brace of a ruleset in the same column as the first
-   character of the ruleset.
- * Separate each ruleset by a blank line.
+* Use one discrete selector per line in multi-selector rulesets.
+* Include a space before each comma in multi-selector rulesets.
+* Include a single space before the opening brace of a ruleset.
+* Include one declaration per line in a declaration block.
+* Use one level of indentation for each declaration.
+* Include no space before and a single space after the colon of a
+  declaration.
+* Where allowed, you MUST avoid specifying units for zero-values, e.g.,
+  `margin: 0`.
+* Line heights SHOULD also be unit-less, unless necessary to be defined
+  as a specific pixel value. This is
+  [more](http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/)
+  than just a style convention, but is worth mentioning here.
+* You MUST NOT use a leading zero for decimal values.
+* You MUST NOT pad parentheses with spaces.
+* Multiple comma-separated values for one property SHOULD be separated
+  by either a space or a newline, including within `rgba()`. Newlines
+  SHOULD be used for lengthier multi-part values such as those for
+  shorthand properties like `box-shadow` and `text-shadow`. Each
+  subsequent value after the first should then be on a new line,
+  indented to the same level as the selector and then spaced over to
+  left-align with the previous value.
+* Include no space before and a space after each comma in
+  comma-separated property or function values.
+* Hex values MUST be lowercase and shorthand, e.g., `#aaa`.
+* Always use single quotes for attribute selectors or values, e.g.,
+  `input[type='checkbox'] { content: ''; }`. You MUST NOT mix quotes.
+* Include a semi-colon at the end of the last declaration in a
+  declaration block.
+* Place the closing brace of a ruleset in the same column as the first
+  character of the ruleset.
+* Separate each ruleset by a blank line.
 
 ```css
 .selector-1 ,
@@ -742,31 +742,33 @@ particularities of any preprocessor in use. The following guidelines are
 in reference to [LESS](http://lesscss.org/), [Sass](http://sass-lang.com/),
 and [Stylus](http://learnboost.github.io/stylus/).
 
- * You MUST use a CSS-like syntax, like SCSS in Sass or the non-omitting
-   syntax in Stylus.
- * You MUST place `@extend` statements on the first lines of a
-   declaration block. Knowing right off the bat that an element inherits
-   another whole set of rules from elsewhere is good.
- * You SHOULD put mixins at the end of a declaration block.
- * You MUST limit nesting to 3 level deep. Reassess any nesting more than 4
-   levels deep. This prevents overly-specific CSS selectors.
- * You SHOULD avoid large numbers of nested rules. Break them up when
-   readability starts to be affected. Preference to avoid nesting that
-   spreads over more than 20 lines.
- * Nothing goes after the nested stuff. And the same order as above
-   within the nested selector would apply.
- * All vendor-prefixes MUST use mixins. The only exception MAY be when
-   it is super proprietary, unlikely to be standardized as is, and so
-   including other vendor prefixes or the non-prefixed version is likely
-   to cause more harm that good (i.e. `-webkit-line-clamp`).
- * You MAY prefix custom functions with `x-` or another namespace. This
-   helps to avoid any potential to confuse your function with a native
-   CSS function, or to clash with functions from libraries.
- * Global and section-specific files are just table of contents. In
-   other words, no styles directly in them. Force yourself to keep all
-   styles organized into component parts. List vendor/global
-   dependencies first, then author dependencies, then patterns, then
-   parts.
+* You MUST use a CSS-like syntax, like SCSS in Sass or the non-omitting
+  syntax in Stylus.
+* You MUST place `@extend` statements on the first lines of a
+  declaration block. Knowing right off the bat that an element inherits
+  another whole set of rules from elsewhere is good.
+* You SHOULD put mixins at the end of a declaration block.
+* You MUST limit nesting to 3 level deep. Reassess any nesting more than 4
+  levels deep. This prevents overly-specific CSS selectors.
+* You SHOULD avoid large numbers of nested rules. Break them up when
+  readability starts to be affected. Preference to avoid nesting that
+  spreads over more than 20 lines.
+* Nothing goes after the nested stuff. And the same order as above
+  within the nested selector would apply.
+* All vendor-prefixes MUST use either mixins or must be handled via
+  [Autoprefixer](https://github.com/postcss/autoprefixer).
+  The only exception to using mixins MAY be when it is super proprietary,
+  unlikely to be standardized as is, and so including other vendor prefixes
+  or the non-prefixed version is likely to cause more harm that good (i.e.
+  `-webkit-line-clamp`).
+* You MAY prefix custom functions with `x-` or another namespace. This
+  helps to avoid any potential to confuse your function with a native
+  CSS function, or to clash with functions from libraries.
+* Global and section-specific files are just table of contents. In
+  other words, no styles directly in them. Force yourself to keep all
+  styles organized into component parts. List vendor/global
+  dependencies first, then author dependencies, then patterns, then
+  parts.
 
 <a name="javascript"></a>
 ## JavaScript
@@ -788,38 +790,38 @@ The chosen code format must ensure that code is: easy to read; easy to
 clearly comment; minimizes the chance of accidentally introducing
 errors; and results in useful diffs and blames.
 
- * Namespaces MUST be declared in `StudlyCaps` and SHOULD start with
-   leading double underscores (i.e. `__MySite`). Use one global
-   namespace per site and do not pollute the global namespace.
- * AMD module names MUST be declared in `StudlyCaps`.
- * Constant names MUST be declared in `UPPERCASE`.
- * Everything else (like method or variable names) MUST be declared in
+* Namespaces MUST be declared in `StudlyCaps` and SHOULD start with
+  leading double underscores (i.e. `__MySite`). Use one global
+  namespace per site and do not pollute the global namespace.
+* AMD module names MUST be declared in `StudlyCaps`.
+* Constant names MUST be declared in `UPPERCASE`.
+* Everything else (like method or variable names) MUST be declared in
   `camelCase`. Private methods or variables SHOULD start with a leading
-   single underscore (i.e. `_myPrivateMethod`).
- * Do not use underscores in names as a word delimiter.
- * You are not a human code compiler/compressor, so do not try to be
-   one: Use thoughtful naming (and a readable structure).
- * Always use single quotes. You MUST NOT mix quotes.
- * There MUST be one blank line after a scope (function), and there
-   MUST be one blank line after the block of `var`/`let`/`const`
-   statements.
- * Control structures always have spaces before and after the conditions
-   and span multiple lines.
- * Opening braces for methods MUST go on the same line, and closing
-   braces MUST go on the next line after the body.
- * Control structure keywords MUST have one space after them; method and
-   function calls MUST NOT.
- * Opening braces for control structures MUST go on the same line, and
-   closing braces MUST go on the next line after the body.
- * Opening parentheses for control structures MUST NOT have a space
-   after them, and closing parentheses for control structures MUST NOT
-   have a space before.
- * Ternary operations SHOULD NOT be used.
- * Use only one `var`/`let`/`const` per scope (function).
- * `var`/`let`/`const` statements SHOULD always be in the beginning of
-   their respective scope (function).
- * [Strict Mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
-   for methods SHOULD be invoked where possible.
+  single underscore (i.e. `_myPrivateMethod`).
+* Do not use underscores in names as a word delimiter.
+* You are not a human code compiler/compressor, so do not try to be
+  one: Use thoughtful naming (and a readable structure).
+* Always use single quotes. You MUST NOT mix quotes.
+* There MUST be one blank line after a scope (function), and there
+  MUST be one blank line after the block of `var`/`let`/`const`
+  statements.
+* Control structures always have spaces before and after the conditions
+  and span multiple lines.
+* Opening braces for methods MUST go on the same line, and closing
+  braces MUST go on the next line after the body.
+* Control structure keywords MUST have one space after them; method and
+  function calls MUST NOT.
+* Opening braces for control structures MUST go on the same line, and
+  closing braces MUST go on the next line after the body.
+* Opening parentheses for control structures MUST NOT have a space
+  after them, and closing parentheses for control structures MUST NOT
+  have a space before.
+* Ternary operations SHOULD NOT be used.
+* Use only one `var`/`let`/`const` per scope (function).
+* `var`/`let`/`const` statements SHOULD always be in the beginning of
+  their respective scope (function).
+* [Strict Mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+  for methods SHOULD be invoked where possible.
 
 ```js
 function foo() {
@@ -921,9 +923,9 @@ return {
 
 Note: Other contexts MAY require different patterns:
 
- * In ES6 context, you SHOULD stick to the [JavaScript module pattern](http://jsmodules.io/).
- * For jQuery plugins, you MUST stick to the [UMD pattern](https://github.com/umdjs/umd/blob/master/jqueryPlugin.js).
- * For everything else you SHOULD use the [Revealing Module Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript).
+* In ES6 context, you SHOULD stick to the [JavaScript module pattern](http://jsmodules.io/).
+* For jQuery plugins, you MUST stick to the [UMD pattern](https://github.com/umdjs/umd/blob/master/jqueryPlugin.js).
+* For everything else you SHOULD use the [Revealing Module Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript).
 
 Important read: [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
 
@@ -936,8 +938,8 @@ Important read: [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](htt
 I highly recommend sticking to these guidelines defined by the PHP
 Framework Interoperability Group:
 
- * [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
- * [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+* [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
+* [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
 
 <a name="exceptions"></a>
 ### Optional exceptions from PSR-1 and PSR-2
@@ -945,12 +947,12 @@ Framework Interoperability Group:
 To be consistent with code written in [JavaScript](#javascript), these
 exceptions are allowed:
 
- * Code MUST use tabs for indenting, not 4 spaces.
- * Opening braces for closure, method and function calls MUST go on the
-   same line, and closing braces MUST go on the next line after the
-   body.
- * Closure, method and function calls MUST NOT have a space after their
-   keywords.
+* Code MUST use tabs for indenting, not 4 spaces.
+* Opening braces for closure, method and function calls MUST go on the
+  same line, and closing braces MUST go on the next line after the
+  body.
+* Closure, method and function calls MUST NOT have a space after their
+  keywords.
 
 <a name="license"></a>
 ## License
@@ -962,17 +964,17 @@ This applies to all documents in this repository.
 <a name="sources"></a>
 ## Sources
 
- * [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/)
- * [Fellowship Code Standards](http://developer.fellowshipone.com/patterns/code.php)
- * [jQuery’s Style Guides](http://contribute.jquery.org/style-guide/)
- * [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
- * [Idiomatic JS](https://github.com/rwldrn/idiomatic.js/)
- * [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
- * [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
- * [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
- * [PEP 8 — Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
- * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
- * [Isobar Front-end Code Standards & Best Practices](http://isobar-idev.github.io/code-standards/)
- * [Sass Style Guide](http://css-tricks.com/sass-style-guide/)
- * [Code Conventions for the Java™ Programming Language](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
- * [Code Conventions for the JavaServer Pages Technology Version 1.x Language](http://www.oracle.com/technetwork/articles/javase/code-convention-138726.html)
+* [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/)
+* [Fellowship Code Standards](http://developer.fellowshipone.com/patterns/code.php)
+* [jQuery’s Style Guides](http://contribute.jquery.org/style-guide/)
+* [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+* [Idiomatic JS](https://github.com/rwldrn/idiomatic.js/)
+* [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
+* [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+* [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
+* [PEP 8 — Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [Isobar Front-end Code Standards & Best Practices](http://isobar-idev.github.io/code-standards/)
+* [Sass Style Guide](http://css-tricks.com/sass-style-guide/)
+* [Code Conventions for the Java™ Programming Language](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
+* [Code Conventions for the JavaServer Pages Technology Version 1.x Language](http://www.oracle.com/technetwork/articles/javase/code-convention-138726.html)
