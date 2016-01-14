@@ -370,6 +370,7 @@ errors; and results in useful diffs and blames.
 * Place the closing brace of a ruleset in the same column as the first
   character of the ruleset.
 * Separate each ruleset by a blank line.
+* Use [Stylelint](http://stylelint.io/) to lint your code style.
 
 ```css
 .selector-1 ,
@@ -822,6 +823,7 @@ errors; and results in useful diffs and blames.
   their respective scope (function).
 * [Strict Mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
   for methods SHOULD be invoked where possible.
+* Use [ESLint](http://eslint.org/) to lint your code style.
 
 ```js
 function foo() {
