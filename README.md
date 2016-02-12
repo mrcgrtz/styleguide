@@ -17,7 +17,7 @@ document are to be interpreted as described in
   * [Project defaults](#project-defaults)
     * [.editorconfig](#editorconfig)
     * [.gitattributes](#gitattributes)
-    * [.jshintrc, .csslintrc et al.](#jshintrc-csslintrc-et-al)
+    * [.eslintrc, .csslintrc et al.](#eslintrc-csslintrc-et-al)
   * [File format](#file-format)
   * [Indenting and line length](#indenting-and-line-length)
 * [Third-party projects](#3rdparty)
@@ -121,8 +121,8 @@ text-based files like in this sample file:
 * text=auto
 ```
 
-<a name="jshintrc-csslintrc-et-al"></a>
-#### .jshintrc, .csslintrc et al.
+<a name="eslintrc-csslintrc-et-al"></a>
+#### .eslintrc, .csslintrc et al.
 
 Projects SHOULD have files aiding in writing with a consistent coding
 style. Some sample files are listed here:
@@ -131,9 +131,7 @@ File                                     | Coding Style | Tool                  
 ---------------------------------------- | ------------ | -------------------------------------------- | -------------------------------------------------------------------------------
 [.editorconfig](helpers/.editorconfig)   | General      | Editor                                       | [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)
 [.gitattributes](helpers/.gitattributes) | General      | [Git](http://git-scm.com/)                   |
-[.jshintrc](helpers/.jshintrc)           | JavaScript   | [JSHint](http://www.jshint.com/)             | [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
 [.eslintrc](helpers/.eslintrc)           | JavaScript   | [ESLint](http://eslint.org/)                 | [SublimeLinter-eslint](https://github.com/roadhump/SublimeLinter-eslint)
-[.jslintrc](helpers/.jslintrc)           | JavaScript   | [JSLint](http://www.jslint.com/)             | [SublimeLinter-jslint](https://github.com/devdoc/SublimeLinter-jslint)
 [.jscsrc](helpers/.jscsrc)               | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) | [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
 [.jsbeautifyrc](helpers/.jsbeautifyrc)   | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    | [JsFormat](https://github.com/jdc0589/JsFormat)
 [.csslintrc](helpers/.csslintrc)         | CSS          | [CSS Lint](http://csslint.net/)              | [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
