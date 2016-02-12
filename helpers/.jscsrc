@@ -49,8 +49,12 @@
 	"requireBlocksOnNewline": true,
 	"disallowEmptyBlocks": true,
 	"disallowSpacesInsideParentheses": true,
-	"requireSpacesInsideObjectBrackets": "allButNested",
-	"requireSpacesInsideArrayBrackets": "allButNested",
+	"requireSpacesInsideObjectBrackets": {
+		"allExcept": [ "}" ]
+	},
+	"requireSpacesInsideArrayBrackets": {
+		"allExcept": [ "[", "]" ]
+	},
 	"disallowQuotedKeysInObjects": "allButReserved",
 	"disallowSpaceAfterObjectKeys": true,
 	"requireCommaBeforeLineBreak": true,
@@ -72,7 +76,7 @@
 	"disallowMultipleLineBreaks": true,
 	"validateLineBreaks": "LF",
 	"validateQuoteMarks": {
-		"mark": "\"",
+		"mark":   "\"",
 		"escape": true
 	},
 	"validateIndentation": "\t",
@@ -84,11 +88,11 @@
 	],
 	"requireLineFeedAtFileEnd": true,
 	"maximumLineLength": {
-		"value": 79,
-		"tabSize": 4,
-		"allowComments": true,
+		"value":            79,
+		"tabSize":          4,
+		"allowComments":    true,
 		"allowUrlComments": true,
-		"allowRegex": true
+		"allowRegex":       true
 	},
 	"requireCapitalizedConstructors": true,
 	"safeContextKeyword": [
@@ -98,9 +102,9 @@
 	"requireDotNotation": true,
 	"disallowYodaConditions": true,
 	"validateJSDoc": {
-		"checkParamNames": true,
+		"checkParamNames":      true,
 		"checkRedundantParams": true,
-		"requireParamTypes": true
+		"requireParamTypes":    true
 	},
 	"requireSpaceAfterLineComment": true
 }
