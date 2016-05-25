@@ -127,15 +127,15 @@ text-based files like in this sample file:
 Projects SHOULD have files aiding in writing with a consistent coding
 style. Some sample files are listed here:
 
-File                                     | Coding Style | Tool                                         | Sublime Text Package
----------------------------------------- | ------------ | -------------------------------------------- | -------------------------------------------------------------------------------
-[.editorconfig](helpers/.editorconfig)   | General      | Editor                                       | [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)
+File                                     | Coding Style | Tool                                         |
+[.editorconfig](helpers/.editorconfig)   | General      | Editor                                       |
 [.gitattributes](helpers/.gitattributes) | General      | [Git](http://git-scm.com/)                   |
-[.eslintrc](helpers/.eslintrc)           | JavaScript   | [ESLint](http://eslint.org/)                 | [SublimeLinter-eslint](https://github.com/roadhump/SublimeLinter-eslint)
-[.jscsrc](helpers/.jscsrc)               | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) | [SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
-[.jsbeautifyrc](helpers/.jsbeautifyrc)   | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    | [JsFormat](https://github.com/jdc0589/JsFormat)
-[.csslintrc](helpers/.csslintrc)         | CSS          | [CSS Lint](http://csslint.net/)              | [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
-[.csscomb.json](helpers/.csscomb.json)   | CSS          | [CSScomb](http://csscomb.com/)               | [CSScomb for Sublime Text](https://github.com/csscomb/sublime-csscomb)
+[.eslintrc](helpers/.eslintrc)           | JavaScript   | [ESLint](http://eslint.org/)                 |
+[.jscsrc](helpers/.jscsrc)               | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) |
+[.jsbeautifyrc](helpers/.jsbeautifyrc)   | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    |
+[.stylelintrc](helpers/.stylelintrc)     | CSS          | [Stylelint](http://stylelint.io/)            |
+[.csslintrc](helpers/.csslintrc)         | CSS          | [CSS Lint](http://csslint.net/)              |
+[.csscomb.json](helpers/.csscomb.json)   | CSS          | [CSScomb](http://csscomb.com/)               |
 [.htmlhintrc](helpers/.htmlhintrc)       | HTML         | [HTMLHint](http://htmlhint.com/)             |
 
 <a name="file-format"></a>
