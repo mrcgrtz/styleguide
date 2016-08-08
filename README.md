@@ -127,16 +127,16 @@ text-based files like in this sample file:
 Projects SHOULD have files aiding in writing with a consistent coding
 style. Some sample files are listed here:
 
-File                                     | Coding Style | Tool                                         |
-[.editorconfig](helpers/.editorconfig)   | General      | Editor                                       |
-[.gitattributes](helpers/.gitattributes) | General      | [Git](http://git-scm.com/)                   |
-[.eslintrc](helpers/.eslintrc)           | JavaScript   | [ESLint](http://eslint.org/)                 |
-[.jscsrc](helpers/.jscsrc)               | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) |
-[.jsbeautifyrc](helpers/.jsbeautifyrc)   | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    |
-[.stylelintrc](helpers/.stylelintrc)     | CSS          | [Stylelint](http://stylelint.io/)            |
-[.csslintrc](helpers/.csslintrc)         | CSS          | [CSS Lint](http://csslint.net/)              |
-[.csscomb.json](helpers/.csscomb.json)   | CSS          | [CSScomb](http://csscomb.com/)               |
-[.htmlhintrc](helpers/.htmlhintrc)       | HTML         | [HTMLHint](http://htmlhint.com/)             |
+File                                      | Coding Style | Tool                                         |
+[.editorconfig](helpers/.editorconfig)    | General      | Editor                                       |
+[.gitattributes](helpers/.gitattributes)  | General      | [Git](http://git-scm.com/)                   |
+[.eslintrc](helpers/.eslintrc.json)       | JavaScript   | [ESLint](http://eslint.org/)                 |
+[.jscsrc](helpers/.jscs.json)             | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) |
+[.jsbeautifyrc](helpers/.jsbeautifyrc)    | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    |
+[.stylelintrc](helpers/.stylelintrc.json) | CSS          | [Stylelint](http://stylelint.io/)            |
+[.csslintrc](helpers/.csslintrc)          | CSS          | [CSS Lint](http://csslint.net/)              |
+[.csscomb.json](helpers/.csscomb.json)    | CSS          | [CSScomb](http://csscomb.com/)               |
+[.htmlhintrc](helpers/.htmlhintrc)        | HTML         | [HTMLHint](http://htmlhint.com/)             |
 
 <a name="file-format"></a>
 ### File format
@@ -300,7 +300,7 @@ indented, too.
 ### Validation
 
 All HTML documents SHOULD be verified against the
-[W3C validator](http://validator.w3.org/nu/) to ensure that the markup
+[W3C validator](https://validator.w3.org/nu/) to ensure that the markup
 is well formed. This in and of itself is not directly indicative of good
 code, but it helps to weed out problems that are able to be tested via
 automation. It is no substitute for manual code review.
@@ -310,12 +310,12 @@ automation. It is no substitute for manual code review.
 
 * Documents SHOULD work without JavaScript enabled.
 * Documents SHOULD be accessible by screenreaders.
-* Use attributes provided by [WAI-ARIA](http://www.w3.org/TR/wai-aria/)
+* Use attributes provided by [WAI-ARIA](https://www.w3.org/TR/wai-aria/)
   to avoid accessibility issues for people using screenreaders or other
   devices.
 * Keep keyboard and touch navigation in mind, do not rely on mouse
   events only.
-* Follow the [WCAG2](http://www.w3.org/TR/WCAG20/#guidelines).
+* Follow the [WCAG2](https://www.w3.org/TR/WCAG20/#guidelines).
 
 <a name="css"></a>
 ## CSS
@@ -691,7 +691,7 @@ Comment style should be simple and consistent within a single code base.
 * Comments MUST be placed on a new line above their subject.
 * Make liberal use of comments to break CSS code into discrete sections.
 * Use “sentence case” comments and consistent text indentation.
-* CSS file headers MUST use Doctype-style [CSSDOC](http://cssdoc.net/).
+* CSS file headers SHOULD use Doctype-style [CSSDOC](http://cssdoc.net/).
 * Rulesets SHOULD be documented using
   [KSS](https://github.com/kneath/kss/blob/master/SPEC.md). KSS attempts
   to provide a methodology for writing maintainable, documented CSS
@@ -925,9 +925,9 @@ Note: Other contexts MAY require different patterns:
 
 * In ES6 context, you SHOULD stick to the [JavaScript module pattern](http://jsmodules.io/).
 * For jQuery plugins, you MUST stick to the [UMD pattern](https://github.com/umdjs/umd/blob/master/jqueryPlugin.js).
-* For everything else you SHOULD use the [Revealing Module Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript).
+* For everything else you SHOULD use the [Revealing Module Pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript).
 
-Important read: [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
+Important read: [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](https://addyosmani.com/writing-modular-js/)
 
 <a name="php"></a>
 ## PHP
