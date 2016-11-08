@@ -127,16 +127,16 @@ text-based files like in this sample file:
 Projects SHOULD have files aiding in writing with a consistent coding
 style. Some sample files are listed here:
 
-File                                      | Coding Style | Tool                                         |
-[.editorconfig](helpers/.editorconfig)    | General      | Editor                                       |
-[.gitattributes](helpers/.gitattributes)  | General      | [Git](http://git-scm.com/)                   |
-[.eslintrc](helpers/.eslintrc.json)       | JavaScript   | [ESLint](http://eslint.org/)                 |
-[.jscsrc](helpers/.jscs.json)             | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) |
-[.jsbeautifyrc](helpers/.jsbeautifyrc)    | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    |
-[.stylelintrc](helpers/.stylelintrc.json) | CSS          | [Stylelint](http://stylelint.io/)            |
-[.csslintrc](helpers/.csslintrc)          | CSS          | [CSS Lint](http://csslint.net/)              |
-[.csscomb.json](helpers/.csscomb.json)    | CSS          | [CSScomb](http://csscomb.com/)               |
-[.htmlhintrc](helpers/.htmlhintrc)        | HTML         | [HTMLHint](http://htmlhint.com/)             |
+| File                                      | Coding Style | Tool                                         |
+| [.editorconfig](helpers/.editorconfig)    | General      | Editor                                       |
+| [.gitattributes](helpers/.gitattributes)  | General      | [Git](http://git-scm.com/)                   |
+| [.eslintrc](helpers/.eslintrc.json)       | JavaScript   | [ESLint](http://eslint.org/)                 |
+| [.jscsrc](helpers/.jscs.json)             | JavaScript   | [JSCS](https://github.com/mdevils/node-jscs) |
+| [.jsbeautifyrc](helpers/.jsbeautifyrc)    | JavaScript   | [JS Beautifier](http://jsbeautifier.org/)    |
+| [.stylelintrc](helpers/.stylelintrc.json) | CSS          | [Stylelint](http://stylelint.io/)            |
+| [.csslintrc](helpers/.csslintrc)          | CSS          | [CSS Lint](http://csslint.net/)              |
+| [.csscomb.json](helpers/.csscomb.json)    | CSS          | [CSScomb](http://csscomb.com/)               |
+| [.htmlhintrc](helpers/.htmlhintrc)        | HTML         | [HTMLHint](http://htmlhint.com/)             |
 
 <a name="file-format"></a>
 ### File format
@@ -789,11 +789,10 @@ The chosen code format must ensure that code is: easy to read; easy to
 clearly comment; minimizes the chance of accidentally introducing
 errors; and results in useful diffs and blames.
 
-* Namespaces MUST be declared in `StudlyCaps` and SHOULD start with
-  leading double underscores (i.e. `__MySite`). Use one global
-  namespace per site and do not pollute the global namespace.
-* AMD module names MUST be declared in `StudlyCaps`.
-* Constant names MUST be declared in `UPPERCASE`.
+* Namespaces MUST be declared in `StudlyCaps`. Use one global namespace per site
+  and do not pollute the global namespace.
+* Module names MUST be declared in `StudlyCaps`.
+* Constant names SHOULD be declared in `UPPERCASE`.
 * Everything else (like method or variable names) MUST be declared in
   `camelCase`. Private methods or variables SHOULD start with a leading
   single underscore (i.e. `_myPrivateMethod`).
@@ -830,7 +829,7 @@ function foo() {
 	"use strict";
 
 	// combined vars first
-	var bar = "",
+	let bar = "",
 		baz = 1;
 
 	// strict checks with === or !==
@@ -839,7 +838,7 @@ function foo() {
 	}
 
 	// spaces before and after coditions
-	for (var i = 0; i < length; i++) {
+	for (let i = 0; i < length; i++) {
 		...
 	}
 
