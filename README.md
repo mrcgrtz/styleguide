@@ -47,8 +47,8 @@ document are to be interpreted as described in
 * [PHP](#php)
   * [PSR-1 and PSR-2](#php-standards)
   * [Optional exceptions from PSR-1 and PSR-2](#exceptions)
-* [License](#license)
 * [Sources](#sources)
+* [License](#license)
 
 <a name="general-principles"></a>
 ## General principles
@@ -954,13 +954,6 @@ exceptions are allowed:
 * Closure, method and function calls MUST NOT have a space after their
   keywords.
 
-<a name="license"></a>
-## License
-
-This Coding Style Guide is licensed under the [Creative Commons
-Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
-This applies to all documents in this repository.
-
 <a name="sources"></a>
 ## Sources
 
@@ -978,3 +971,8 @@ This applies to all documents in this repository.
 * [Sass Style Guide](http://css-tricks.com/sass-style-guide/)
 * [Code Conventions for the Java™ Programming Language](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
 * [Code Conventions for the JavaServer Pages Technology Version 1.x Language](http://www.oracle.com/technetwork/articles/javase/code-convention-138726.html)
+
+<a name="license"></a>
+## License
+
+MIT © [Marc Görtz](https://marcgoertz.de/)
