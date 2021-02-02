@@ -1,3 +1,7 @@
+**:wave: Hey! I archived my styleguide. Since bringing it into existence things have changed a lot, like, a lot! Nowadays we can rely much better on static code analysis with sensible rulesets like any `*-recommended` plugin for linters or automatted formatting tools like `prettier` or `codesniffer`. I highly recommend using these.**
+
+-----
+
 # Dreamseer’s Indisputable Coding Style
 
 **This is my personal frontend coding style guide.** It is a living
